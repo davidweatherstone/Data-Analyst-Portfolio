@@ -1,5 +1,5 @@
 # SQL data exploration - Weatherline
-Weatherline Lake District is an organization run by the Lake District National Park Authority which employs Fell top assessors to record the weather conditions each day throughout the winter season. The fell top assessors climb Helvellyn in the centre of the Lake District and take weather readings, photographs and record the ground conditions to offer advice to visitors to the Lake District national park. Helvellyn is the third largest mountain in England at 950m and is a popular mountain for walkers throughout the year. For archival purposes the data that the Weatherline Fell top assessors record is hosted on their website and this has allowed me to explore the data in detail as shown below.
+Weatherline Lake District is an organization run by the Lake District National Park Authority which employs Fell top assessors to record the weather conditions each day throughout the winter season. The fell top assessors climb Helvellyn in the centre of the Lake District and take weather readings, photographs and record the ground conditions to offer advice to visitors to the Lake District national park. Helvellyn is the third largest mountain in England at 950m and is a popular mountain for walkers throughout the year. For archival purposes the data that the Weatherline Fell top assessors record is hosted on the Weatherline Lake District website and this has allowed me to explore the data in detail as shown below.
 
 Credit for this data goes to the Lake District National Park Authority.
 
@@ -12,19 +12,17 @@ https://www.lakedistrictweatherline.co.uk/about/readings
 
 The data provided is hosted either in .xls format or within tables hosted on the web page. There are 18 seperate spreadsheets and 10 separate web pages. These provide data from Season 1997-1998 through to 2021-2022 (23 seasons) with overlapping data from Season 2012-2013 through to 2015-2016 (4 seasons) and one missing season (2004 - 2005).
 
-Througout the years, the amount of weather data types collected each day has varied, with for example, snow levels and cloud levels being collected in only certain years. Since Season 2012-2013 there has been a move towards text based reports of the weather and conditions reporting the specifics of routes, ground conditions and equipment required for tackling the ascent of Helvellyn.
+Througout the years, the amount of weather data types published for each day has varied, with for example, snow levels and cloud levels being collected in only certain years. Since Season 2012-2013 there has been a move towards text based reports of the weather and conditions reporting the specifics of routes, ground conditions and equipment required for tackling the ascent of Helvellyn.
 
-The most consistent data points collected each season are those which I will be basing my exploratory analysis on. These are the following:
+Consistent data points published for all seasons are below, and these will form the basis of my exploratory analysis.
 
 * Date
 * Location of readings
 * Temperature (C)
-* Windchill (C)
+* Wind chill (C)
 * Max wind speed (MPH)
 * Average wind speed (MPH)
 * Wind direction
-
-In some years the temperature at the base of the mountain in Glenridding is also recorded.
 
 ## Queries
 Using SQL I am hoping to find the answers to the following questions:
