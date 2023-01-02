@@ -69,7 +69,7 @@ Using SQL I am hoping to find the answers to the following questions:
 
 https://www.metoffice.gov.uk/weather/learn-about/weather/seasons/winter/when-does-winter-start
 
-The Weatherline team work to record the conditions throughout winter. According to the met office, the metreoroligical definition of winter starts on 1 December each year and ends on 28 (or 29 during a Leap Year) February. While astronomical winter starts on or around 21 December and ends on 20 March. 
+According to the met office, the metreoroligical definition of winter starts on 1 December each year and ends on 28 (or 29 during a Leap Year) February. While astronomical winter starts on or around 21 December and ends on 20 March. 
 
 The purpose of the Weatherline Fell top assessors is to check conditions, take photos and supply a report. The start and end of their work varies each year according to the conditions.
 
@@ -139,20 +139,20 @@ ORDER BY 2;
 ```sql
 WITH cte AS(
 	SELECT
-			season,
-			date,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
-				THEN avg_wind_mph END AS november_wind,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
-				THEN avg_wind_mph END AS december_wind,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
-				THEN avg_wind_mph END AS january_wind,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
-				THEN avg_wind_mph END AS february_wind,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
-				THEN avg_wind_mph END AS march_wind,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
-				THEN avg_wind_mph END AS april_wind
+		season,
+		date,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
+			THEN avg_wind_mph END AS november_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
+			THEN avg_wind_mph END AS december_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
+			THEN avg_wind_mph END AS january_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
+			THEN avg_wind_mph END AS february_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
+			THEN avg_wind_mph END AS march_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
+			THEN avg_wind_mph END AS april_wind
 	FROM weatherline
 	WHERE	avg_wind_mph IS NOT NULL AND
 			location = 'Helvellyn summit'
@@ -204,20 +204,20 @@ ORDER BY 2;
 ```sql
 WITH cte AS(
 	SELECT
-			season,
-			date,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
-				THEN air_temp_c END AS november_air_temp,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
-				THEN air_temp_c END AS december_air_temp,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
-				THEN air_temp_c END AS january_air_temp,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
-				THEN air_temp_c END AS february_air_temp,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
-				THEN air_temp_c END AS march_air_temp,
-			CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
-				THEN air_temp_c END AS april_air_temp
+		season,
+		date,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
+			THEN air_temp_c END AS november_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
+			THEN air_temp_c END AS december_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
+			THEN air_temp_c END AS january_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
+			THEN air_temp_c END AS february_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
+			THEN air_temp_c END AS march_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
+			THEN air_temp_c END AS april_air_temp
 	FROM weatherline
 	WHERE	air_temp_c IS NOT NULL AND
 			location = 'Helvellyn summit'
