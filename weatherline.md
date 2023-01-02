@@ -1,6 +1,5 @@
 # SQL data exploration - Weatherline
-
-Weatherline Lake District is an organization which employs Fell top assessors to record the weather conditions each day throughout the winter season. The fell top assessors climb Helvellyn in the centre of the Lake District and take weather readings, photographs and record the ground conditions to offer advice to visitors to the Lake District national park. Helvellyn is the third largest mountain in England at 950m and is a popular mountain for walkers throughout the year. For archival purposes the data that the Weatherline Fell top assessors record is hosted on their website and this has allowed me to explore the data in detail as shown below.
+Weatherline Lake District is an organization run by the Lake District National Park Authority which employs Fell top assessors to record the weather conditions each day throughout the winter season. The fell top assessors climb Helvellyn in the centre of the Lake District and take weather readings, photographs and record the ground conditions to offer advice to visitors to the Lake District national park. Helvellyn is the third largest mountain in England at 950m and is a popular mountain for walkers throughout the year. For archival purposes the data that the Weatherline Fell top assessors record is hosted on their website and this has allowed me to explore the data in detail as shown below.
 
 Credit for this data goes to the Lake District National Park Authority.
 
@@ -50,9 +49,9 @@ Using SQL I am hoping to find the answers to the following questions:
 5. Import the flat file in to MS SQL Server to query the data
 
 ## Season length
-https://www.metoffice.gov.uk/weather/learn-about/weather/seasons/winter/when-does-winter-start
-
 According to the met office, the metreoroligical definition of winter starts on 1 December each year and ends on 28 (or 29 during a Leap Year) February. While astronomical winter starts on or around 21 December and ends on 20 March. 
+
+https://www.metoffice.gov.uk/weather/learn-about/weather/seasons/winter/when-does-winter-start
 
 The purpose of the Weatherline Fell top assessors is to check conditions, take photos and supply a report. The start and end of their work varies each year according to the conditions.
 
