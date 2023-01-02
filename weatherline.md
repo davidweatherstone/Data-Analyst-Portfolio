@@ -1,8 +1,6 @@
 # SQL data exploration - Weatherline
 
-I've been going to the Lake District for a number of years and the most reliable weather reports I've experienced are provided on the Lake District Weatherline website. This website hosts forecasts, text reports and photographs to help understand the conditions in the Lake District National Park.
-
-A Weatherline Fell top assessor records weather conditions each day throughout the winter season by climbing Helvellyn in the centre of the Lake District. Helvellyn is the third largest mountain in England at 950m and is a popular mountain for walkers throughout the year. For archival purposes the data that the Weatherline Fell top assessors record is hosted on their website and this has allowed me to explore the data in detail as shown below.
+Weatherline Lake District is an organization which employs Fell top assessors to record the weather conditions each day throughout the winter season. The fell top assessors climb Helvellyn in the centre of the Lake District and take weather readings, photographs and record the ground conditions to offer advice to visitors to the Lake District national park. Helvellyn is the third largest mountain in England at 950m and is a popular mountain for walkers throughout the year. For archival purposes the data that the Weatherline Fell top assessors record is hosted on their website and this has allowed me to explore the data in detail as shown below.
 
 Credit for this data goes to the Lake District National Park Authority.
 
@@ -30,20 +28,18 @@ The most consistent data points collected each season are those which I will be 
 In some years the temperature at the base of the mountain in Glenridding is also recorded.
 
 ## Queries
-
 Using SQL I am hoping to find the answers to the following questions:
 * When does a typical season start and end?
 * What is the average summit temperature in each month?
     * How does the average temperature compare to the wind chill temperature?
+	* How does the average temperature at the summit compare to the temperature in town?
 * What is the average wind speed in each month?
     * How does the average speed compare to the max speed?
 * What was the lowest temperature recorded?
 * What was the highest wind speed recorded?
-* Comparison of temperature at the summit versus in town
 * What direction does the wind generally travel?
 
 ## Methods
-
 1. Collect the data by downloading it from the Lake District Weatherline website
 2. Use Excel to standardize the tables by renaming and rearranging the columns
 3. Use Power Query to append the tables together
@@ -53,20 +49,7 @@ Using SQL I am hoping to find the answers to the following questions:
     * Standardizing readings, e.g. removing text from number fields
 5. Import the flat file in to MS SQL Server to query the data
 
-## Limitations
-
-1. Nulls
-2. Season length
-3. Location of reading
-4. Time of day
-5. Accuracy of recording
-6. Season 2004 - 2005 is missing from the available data
-
-## Nulls
-
-
 ## Season length
-
 https://www.metoffice.gov.uk/weather/learn-about/weather/seasons/winter/when-does-winter-start
 
 According to the met office, the metreoroligical definition of winter starts on 1 December each year and ends on 28 (or 29 during a Leap Year) February. While astronomical winter starts on or around 21 December and ends on 20 March. 
@@ -98,7 +81,7 @@ ORDER BY 2,3;
 ```
 
 ## Location queries
-While the Weatherline team aim to summit Helvellyn each day during the winter season due to weather, ground conditions, rescue operations and team availability they will sometimes summit other fells in the Lake District, make it partially up Helvellyn or be unavailable on any single day
+While the Weatherline team aim to summit Helvellyn each day during the winter season due to weather, ground conditions, rescue operations and team availability they will sometimes summit other fells in the Lake District, make it partially up Helvellyn or be unavailable on any single day.
 
 ### A list of locations where measurements were taken
 ```sql
@@ -119,7 +102,7 @@ ORDER BY 2 DESC;
 
 ## Wind speeds
 
-### Difference between average wind speeds and max wind speeds by month (in mph)
+### The difference between average wind speeds and max wind speeds by month (in mph)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
@@ -135,7 +118,7 @@ GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY 2;
 ```
 
-### Average wind speeds (mph) for each month throughout the seasons
+### The average wind speeds (mph) for each month throughout the seasons
 ```sql
 WITH cte AS(
 	SELECT
@@ -170,7 +153,7 @@ FROM cte
 GROUP BY season
 ORDER BY season;
 ```
-### Highest wind speeds each season
+### The highest wind speeds each season
 ```sql
 SELECT
 	season,
@@ -183,8 +166,7 @@ ORDER BY season;
 ```
 
 ## Temperatures
-
-### Difference between average air temperature and average wind chill temperature by month (in celcius)
+### The difference between average air temperature and average wind chill temperature by month (in celcius)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
@@ -200,7 +182,7 @@ GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY 2;
 ```
 
-### Average temperatures (c) for each month throughout the seasons
+### The average temperatures (c) for each month throughout the seasons
 ```sql
 WITH cte AS(
 	SELECT
@@ -236,7 +218,7 @@ GROUP BY season
 ORDER BY season;
 ```
 
-### Lowest temperatures (c) each season
+### The lowest temperatures (c) each season
 ```sql
 SELECT
 	season,
@@ -248,7 +230,7 @@ GROUP BY season
 ORDER BY season;
 ```
 
-### Summit temperature versus town (Glenridding) temperature (in c)
+### The summit temperature difference versus town (Glenridding) temperature (in c)
 
 ```sql
 SELECT 
