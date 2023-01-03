@@ -87,7 +87,7 @@ ORDER BY 2,3;
 ## Location queries
 While the Weatherline team aim to summit Helvellyn each day during the winter season due to weather, ground conditions, rescue operations and team availability they will sometimes summit other fells in the Lake District, make it partially up Helvellyn or be unavailable on any single day.
 
-### A list of locations where measurements were taken
+### A count of locations where measurements were taken
 ```sql
 SELECT
 	COUNT(DISTINCT location) AS measurement_locations
@@ -105,7 +105,7 @@ ORDER BY 2 DESC;
 ```
 
 ## Temperature queries
-### The average temperatures (c) for each month throughout the seasons
+### The average temperatures (Celcius) for each month throughout the seasons
 ```sql
 WITH cte AS(
 	SELECT
@@ -141,7 +141,7 @@ GROUP BY season
 ORDER BY season;
 ```
 
-### The difference between average air temperature and average wind chill temperature by month (in celcius)
+### The difference between average air temperature and average wind chill temperature by month (in Celcius)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
@@ -157,7 +157,7 @@ GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY 2;
 ```
 
-### The difference in temperature between the summit of Helvellyn and the base (Glenridding) temperature (in c)
+### The difference in temperature between the summit of Helvellyn and the base (Glenridding) temperature (in Celcius)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
@@ -174,7 +174,7 @@ GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY 2;
 ```
 
-### The lowest temperatures (c) each season
+### The lowest temperatures (Celcius) each season
 ```sql
 SELECT
 	season,
@@ -186,7 +186,7 @@ GROUP BY season
 ORDER BY season;
 ```
 
-### The largest swings in temperature (c) from one day to the next
+### The largest swings in temperature (Celcius) from one day to the next
 ```sql
 WITH cte AS(
 	SELECT
@@ -208,7 +208,7 @@ GROUP BY date, diff_to_prev_day;
 ```
 
 ## Wind speeds
-### The average wind speeds (mph) for each month throughout the seasons
+### The average wind speeds (MPH) for each month throughout the seasons
 ```sql
 WITH cte AS(
 	SELECT
@@ -243,7 +243,7 @@ FROM cte
 GROUP BY season
 ORDER BY season;
 ```
-### The highest wind speeds each season
+### The highest wind speeds (MPH) each season
 ```sql
 SELECT
 	season,
@@ -255,7 +255,7 @@ GROUP BY season
 ORDER BY season;
 ```
 
-### The difference between average wind speeds and max wind speeds by month (in mph)
+### The difference between average wind speeds and max wind speeds by month (in MPH)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
@@ -271,7 +271,7 @@ GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY 2;
 ```
 
-### The occurances of wind speeds experienced, matched against the Beaufort Scale - total
+### The occurances of wind speeds experienced, matched against the Beaufort Scale - Total
 ```sql
 SELECT
 	bs.wind_force,
@@ -288,7 +288,7 @@ GROUP BY bs.wind_force, bs.wind_speed, bs.description
 ORDER BY bs.wind_force ASC;
 ```
 
-### The occurances of wind speeds experienced, matched against the Beaufort Scale - totals by month
+### The occurances of wind speeds experienced, matched against the Beaufort Scale - Total by Month
 ```sql
 WITH cte AS(
 	SELECT
@@ -329,7 +329,7 @@ GROUP BY wind_force, wind_speed, description
 ORDER BY wind_force ASC;
 ```
 
-## The highest wind speeds recorded each season
+## The highest wind speeds (MPH) recorded each season
 ```sql
 SELECT
 	season,
@@ -341,7 +341,7 @@ GROUP BY season
 ORDER BY season;
 ```
 
-## Wind direction
+## Wind direction occurences counted
 ```sql
 SELECT
 	wind_direction,
