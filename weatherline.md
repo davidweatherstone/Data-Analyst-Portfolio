@@ -93,16 +93,32 @@ SELECT
 	COUNT(DISTINCT location) AS measurement_locations
 FROM weatherline;
 ```
+|measurement_locations|
+|---------------------|
+|35                   |
 
-### A list of locations with a count of measurements
+### Top 10 locations by count of measurements
 ```sql
-SELECT
+SELECT TOP 10
 	location,
 	COUNT(date) AS count
 FROM weatherline
+WHERE location IS NOT NULL
 GROUP BY location 
 ORDER BY COUNT(date) DESC;
 ```
+|location|count|
+|--------|-----|
+|Helvellyn summit|2499 |
+|Swirral Edge|28   |
+|Catstycam summit|20   |
+|Blencathra summit|15   |
+|Scafell Pike summit|11   |
+|Helvellyn Lower Man summit|10   |
+|Brown Cove Crags summit|10   |
+|Red Tarn|8    |
+|Nethermost Pike summit|7    |
+|Birkhouse Moor summit|7    |
 
 ## Temperature queries
 ### The average temperatures (Celcius) for each month throughout the seasons
@@ -140,6 +156,31 @@ FROM cte
 GROUP BY season
 ORDER BY season;
 ```
+|season|avg_november_air_temp|avg_december_air_temp|avg_january_air_temp|avg_february_air_temp|avg_march_air_temp|avg_april_air_temp|
+|------|---------------------|---------------------|--------------------|---------------------|------------------|------------------|
+|1997 - 1998|2.740000             |1.060000             |-.030000            |2.280000             |2.410000          |1.250000          |
+|1998 - 1999|1.740000             |.560000              |.310000             |-.010000             |2.810000          |5.820000          |
+|1999 - 2000|                     |-.190000             |1.430000            |.700000              |2.850000          |2.670000          |
+|2000 - 2001|2.140000             |.550000              |-1.010000           |.490000              |                  |                  |
+|2001 - 2002|                     |.200000              |1.280000            |-.270000             |2.450000          |4.460000          |
+|2002 - 2003|                     |.620000              |.220000             |.580000              |5.220000          |8.810000          |
+|2003 - 2004|                     |.870000              |.100000             |.020000              |.420000           |                  |
+|2005 - 2006|                     |.310000              |.050000             |.150000              |-1.070000         |                  |
+|2006 - 2007|                     |2.440000             |1.400000            |1.620000             |1.850000          |6.260000          |
+|2007 - 2008|                     |1.210000             |.740000             |2.860000             |-.690000          |-1.360000         |
+|2008 - 2009|-1.650000            |-.010000             |-.880000            |                     |-1.600000         |                  |
+|2009 - 2010|-2.100000            |-1.140000            |-3.330000           |-2.640000            |.730000           |.600000           |
+|2010 - 2011|                     |-3.940000            |-1.110000           |.110000              |1.720000          |5.300000          |
+|2011 - 2012|                     |-.300000             |-.540000            |-.120000             |3.960000          |2.040000          |
+|2012 - 2013|                     |-.790000             |-1.990000           |-2.050000            |-3.060000         |-3.270000         |
+|2013 - 2014|                     |.750000              |-.180000            |-.250000             |2.390000          |5.000000          |
+|2014 - 2015|                     |-.010000             |-2.170000           |-1.030000            |-.530000          |3.840000          |
+|2015 - 2016|                     |2.980000             |.000000             |-1.920000            |.730000           |1.600000          |
+|2016 - 2017|                     |2.050000             |-.060000            |.080000              |1.720000          |1.200000          |
+|2017 - 2018|                     |-.320000             |-1.160000           |-2.670000            |-.970000          |.320000           |
+|2018 - 2019|-3.300000            |.650000              |.640000             |-.910000             |-.900000          |                  |
+|2019 - 2020|                     |.540000              |.600000             |-.910000             |-.900000          |                  |
+|2020 - 2021|                     |-.310000             |-2.080000           |-.650000             |2.020000          |.040000           |
 
 ### The difference between average air temperature and average wind chill temperature by month (in Celcius)
 ```sql
@@ -156,6 +197,14 @@ WHERE	air_temp_c IS NOT NULL AND
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY MONTH(DATEADD(m, 2, DATE));
 ```
+|month_name|season_month|avg_air_temp_c|avg_wind_chill_temp_c|avg_vs_wind_chill_diff|
+|----------|------------|--------------|---------------------|----------------------|
+|November  |1           |-2.150000     |-8.080000            |5.930000              |
+|December  |2           |.310000       |-8.230000            |8.540000              |
+|January   |3           |-.530000      |-9.890000            |9.350000              |
+|February  |4           |-.420000      |-9.190000            |8.760000              |
+|March     |5           |1.000000      |-6.990000            |7.990000              |
+|April     |6           |3.280000      |-4.490000            |7.770000              |
 
 ### The difference in temperature between the summit of Helvellyn and the base (Glenridding) temperature (in Celcius)
 ```sql
@@ -173,6 +222,14 @@ WHERE	location = 'Helvellyn summit' AND
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY MONTH(DATEADD(m, 2, DATE));
 ```
+|month_name|season_month|avg_air_temp_c|avg_temp_c_town|difference|
+|----------|------------|--------------|---------------|----------|
+|November  |1           |2.140000      |7.600000       |5.460000  |
+|December  |2           |.590000       |6.190000       |5.600000  |
+|January   |3           |.320000       |6.130000       |5.800000  |
+|February  |4           |.600000       |7.180000       |6.580000  |
+|March     |5           |2.890000      |9.550000       |6.660000  |
+|April     |6           |4.860000      |11.790000      |6.930000  |
 
 ### The lowest temperatures (Celcius) each season
 ```sql
@@ -185,8 +242,33 @@ WHERE location = 'Helvellyn summit'
 GROUP BY season
 ORDER BY season;
 ```
+|season|lowest_temperature_c|lowest_wind_chill_temperature_c|
+|------|--------------------|-------------------------------|
+|1997 - 1998|-5.60               |                               |
+|1998 - 1999|-6.10               |                               |
+|1999 - 2000|-6.00               |                               |
+|2000 - 2001|-5.70               |                               |
+|2001 - 2002|-6.00               |                               |
+|2002 - 2003|-11.50              |-31.80                         |
+|2003 - 2004|-9.10               |-33.40                         |
+|2005 - 2006|-6.80               |-17.50                         |
+|2006 - 2007|-6.00               |-25.00                         |
+|2007 - 2008|-6.40               |-19.00                         |
+|2008 - 2009|-5.60               |-17.40                         |
+|2009 - 2010|-8.40               |-21.20                         |
+|2010 - 2011|-8.50               |-20.20                         |
+|2011 - 2012|-6.60               |-16.90                         |
+|2012 - 2013|-8.70               |-23.20                         |
+|2013 - 2014|-4.70               |-14.00                         |
+|2014 - 2015|-6.30               |-18.70                         |
+|2015 - 2016|-5.50               |-17.30                         |
+|2016 - 2017|-5.90               |-19.10                         |
+|2017 - 2018|-8.40               |-23.50                         |
+|2018 - 2019|-4.30               |-18.30                         |
+|2019 - 2020|-4.30               |-18.30                         |
+|2020 - 2021|-7.40               |-23.00                         |
 
-### The largest swings in temperature (Celcius) from one day to the next
+### The largest single day temperature (Celcius) change
 ```sql
 WITH cte AS(
 	SELECT
@@ -206,6 +288,10 @@ WHERE	diff_to_prev_day IS NOT NULL AND
 		diff_to_prev_day = (SELECT MIN(diff_to_prev_day) FROM cte)
 GROUP BY date, diff_to_prev_day;
 ```
+|date|diff_to_prev_day|
+|----|----------------|
+|2003-03-12|13.80           |
+|2006-01-30|-11.80          |
 
 ## Wind speeds
 ### The average wind speeds (MPH) for each month throughout the seasons
@@ -243,17 +329,31 @@ FROM cte
 GROUP BY season
 ORDER BY season;
 ```
-### The highest wind speeds (MPH) each season
-```sql
-SELECT
-	season,
-	MAX(avg_wind_mph) AS highest_avg_wind_mph,
-	MAX(max_wind_mph) AS highest_max_wind_mph
-FROM weatherline
-WHERE location = 'Helvellyn summit'
-GROUP BY season
-ORDER BY season;
-```
+|season|avg_november_wind|avg_december_wind|avg_january_wind|avg_february_wind|avg_march_wind|avg_april_wind|
+|------|-----------------|-----------------|----------------|-----------------|--------------|--------------|
+|1997 - 1998|17.430000        |21.370000        |22.870000       |28.520000        |20.500000     |18.360000     |
+|1998 - 1999|15.860000        |23.100000        |23.830000       |24.330000        |21.520000     |17.060000     |
+|1999 - 2000|                 |25.120000        |23.620000       |28.590000        |17.710000     |14.470000     |
+|2000 - 2001|33.910000        |20.230000        |18.700000       |18.650000        |              |              |
+|2001 - 2002|                 |13.500000        |26.860000       |26.600000        |19.650000     |7.510000      |
+|2002 - 2003|                 |10.240000        |20.000000       |13.780000        |15.640000     |9.690000      |
+|2003 - 2004|                 |14.740000        |20.130000       |14.230000        |18.760000     |              |
+|2005 - 2006|                 |16.620000        |14.680000       |16.620000        |14.020000     |              |
+|2006 - 2007|                 |22.620000        |26.850000       |11.520000        |20.970000     |7.040000      |
+|2007 - 2008|                 |20.050000        |22.270000       |22.030000        |22.110000     |13.800000     |
+|2008 - 2009|5.500000         |16.750000        |19.770000       |                 |20.900000     |              |
+|2009 - 2010|23.430000        |17.090000        |16.730000       |10.410000        |15.650000     |15.750000     |
+|2010 - 2011|                 |15.300000        |18.560000       |17.740000        |14.470000     |45.000000     |
+|2011 - 2012|                 |22.700000        |18.920000       |20.880000        |15.090000     |19.780000     |
+|2012 - 2013|                 |17.790000        |19.220000       |17.210000        |18.100000     |19.630000     |
+|2013 - 2014|                 |30.220000        |22.780000       |21.390000        |18.070000     |6.000000      |
+|2014 - 2015|                 |25.450000        |25.910000       |19.890000        |25.480000     |12.600000     |
+|2015 - 2016|                 |28.990000        |20.560000       |19.870000        |15.890000     |13.100000     |
+|2016 - 2017|                 |20.510000        |21.050000       |27.370000        |17.510000     |26.700000     |
+|2017 - 2018|                 |20.260000        |21.120000       |15.760000        |16.390000     |20.150000     |
+|2018 - 2019|11.300000        |22.730000        |26.210000       |29.670000        |14.400000     |              |
+|2019 - 2020|                 |22.510000        |25.890000       |29.670000        |14.400000     |              |
+|2020 - 2021|                 |19.580000        |20.950000       |25.840000        |15.890000     |15.860000     |
 
 ### The difference between average wind speeds and max wind speeds by month (in MPH)
 ```sql
@@ -270,6 +370,14 @@ WHERE	avg_wind_mph IS NOT NULL AND
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY MONTH(DATEADD(m, 2, date));
 ```
+|month_name|season_month|avg_wind_mph   |max_wind_mph|avg_max_wind_diff|
+|----------|------------|---------------|------------|-----------------|
+|November  |1           |23.470000      |30.790000   |7.320000         |
+|December  |2           |20.190000      |29.370000   |9.180000         |
+|January   |3           |21.640000      |31.360000   |9.720000         |
+|February  |4           |20.890000      |30.070000   |9.180000         |
+|March     |5           |18.150000      |25.890000   |7.740000         |
+|April     |6           |14.060000      |21.230000   |7.170000         |
 
 ### The occurances of wind speeds experienced, matched against the Beaufort Scale - Total
 ```sql
@@ -287,6 +395,20 @@ WHERE	wl.avg_wind_mph IS NOT NULL AND
 GROUP BY bs.wind_force, bs.wind_speed, bs.description
 ORDER BY bs.wind_force;
 ```
+|wind_force|wind_speed|description    |count|percentage|
+|----------|----------|---------------|-----|----------|
+|0         |<1        |Calm           |27   |1         |
+|1         |1-3       |Light Air      |121  |4         |
+|2         |4-7       |Light Breeze   |285  |11        |
+|3         |8-12      |Gentle Breeze  |395  |15        |
+|4         |13-18     |Moderate Breeze|488  |19        |
+|5         |19-24     |Fresh Breeze   |391  |15        |
+|6         |25-31     |Strong Breeze  |334  |13        |
+|7         |32-38     |Near Gale      |220  |8         |
+|8         |39-46     |Gale           |145  |5         |
+|9         |47-54     |Strong Gale    |46   |1         |
+|10        |55-63     |Storm          |21   |0         |
+|11        |64-72     |Violent Storm  |5    |0         |
 
 ### The occurances of wind speeds experienced, matched against the Beaufort Scale - Total by Month
 ```sql
@@ -328,6 +450,20 @@ FROM cte
 GROUP BY wind_force, wind_speed, description
 ORDER BY wind_force;
 ```
+|wind_force|wind_speed|description    |Nov_count|Dec_count|Jan_count|Feb_count|Mar_count|Apr_count|
+|----------|----------|---------------|---------|---------|---------|---------|---------|---------|
+|0         |<1        |Calm           |1        |4        |7        |5        |6        |4        |
+|1         |1-3       |Light Air      |2        |22       |22       |22       |37       |16       |
+|2         |4-7       |Light Breeze   |4        |58       |60       |57       |71       |35       |
+|3         |8-12      |Gentle Breeze  |4        |102      |88       |83       |91       |27       |
+|4         |13-18     |Moderate Breeze|6        |132      |134      |98       |103      |15       |
+|5         |19-24     |Fresh Breeze   |4        |88       |108      |97       |79       |15       |
+|6         |25-31     |Strong Breeze  |0        |83       |93       |81       |64       |13       |
+|7         |32-38     |Near Gale      |3        |53       |63       |56       |40       |5        |
+|8         |39-46     |Gale           |3        |33       |50       |32       |21       |6        |
+|9         |47-54     |Strong Gale    |1        |9        |17       |10       |9        |0        |
+|10        |55-63     |Storm          |2        |6        |7        |4        |1        |1        |
+|11        |64-72     |Violent Storm  |1        |1        |1        |2        |0        |0        |
 
 ## The highest wind speeds (MPH) recorded each season
 ```sql
@@ -340,6 +476,31 @@ WHERE location = 'Helvellyn summit'
 GROUP BY season
 ORDER BY season;
 ```
+|season|highest_avg_wind_speed_mph|highest_max_wind_speed_mph|
+|------|--------------------------|--------------------------|
+|1997 - 1998|69.00                     |78.00                     |
+|1998 - 1999|55.00                     |64.00                     |
+|1999 - 2000|65.00                     |87.00                     |
+|2000 - 2001|72.00                     |85.00                     |
+|2001 - 2002|59.00                     |90.80                     |
+|2002 - 2003|47.10                     |68.40                     |
+|2003 - 2004|45.60                     |82.00                     |
+|2005 - 2006|47.10                     |60.70                     |
+|2006 - 2007|52.10                     |76.80                     |
+|2007 - 2008|48.10                     |68.00                     |
+|2008 - 2009|41.70                     |53.40                     |
+|2009 - 2010|50.10                     |64.30                     |
+|2010 - 2011|54.30                     |82.10                     |
+|2011 - 2012|56.80                     |78.70                     |
+|2012 - 2013|54.30                     |69.90                     |
+|2013 - 2014|56.00                     |72.00                     |
+|2014 - 2015|56.80                     |84.90                     |
+|2015 - 2016|63.40                     |77.80                     |
+|2016 - 2017|48.00                     |200.00                    |
+|2017 - 2018|49.60                     |81.70                     |
+|2018 - 2019|50.30                     |63.40                     |
+|2019 - 2020|50.30                     |63.40                     |
+|2020 - 2021|55.70                     |80.20                     |
 
 ## Wind direction occurences counted
 ```sql
@@ -352,3 +513,17 @@ WHERE location = 'Helvellyn summit'
 GROUP BY wind_direction
 ORDER BY COUNT(wind_direction) DESC;
 ```
+|wind_force|wind_speed|description    |Nov_count|Dec_count|Jan_count|Feb_count|Mar_count|Apr_count|
+|----------|----------|---------------|---------|---------|---------|---------|---------|---------|
+|0         |<1        |Calm           |1        |4        |7        |5        |6        |4        |
+|1         |1-3       |Light Air      |2        |22       |22       |22       |37       |16       |
+|2         |4-7       |Light Breeze   |4        |58       |60       |57       |71       |35       |
+|3         |8-12      |Gentle Breeze  |4        |102      |88       |83       |91       |27       |
+|4         |13-18     |Moderate Breeze|6        |132      |134      |98       |103      |15       |
+|5         |19-24     |Fresh Breeze   |4        |88       |108      |97       |79       |15       |
+|6         |25-31     |Strong Breeze  |0        |83       |93       |81       |64       |13       |
+|7         |32-38     |Near Gale      |3        |53       |63       |56       |40       |5        |
+|8         |39-46     |Gale           |3        |33       |50       |32       |21       |6        |
+|9         |47-54     |Strong Gale    |1        |9        |17       |10       |9        |0        |
+|10        |55-63     |Storm          |2        |6        |7        |4        |1        |1        |
+|11        |64-72     |Violent Storm  |1        |1        |1        |2        |0        |0        |
