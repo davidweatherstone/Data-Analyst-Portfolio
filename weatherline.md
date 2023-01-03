@@ -12,7 +12,7 @@ https://www.lakedistrictweatherline.co.uk/about/readings
 
 The data provided is hosted either in .xls format or within tables hosted on the web page. There are 18 seperate spreadsheets and 10 separate web pages. These provide data from Season 1997-1998 through to 2021-2022 (23 seasons) with overlapping data from Season 2012-2013 through to 2015-2016 (4 seasons) and one missing season (2004 - 2005).
 
-Througout the years, the amount of weather data types published for each day has varied, with for example, snow levels and cloud levels being collected in only certain years. Since Season 2012-2013 there has been a move towards text based reports of the weather and conditions reporting the specifics of routes, ground conditions and equipment required for tackling the ascent of Helvellyn.
+In the data available the amount of data points published varies, with for example, snow levels and cloud levels being reported for only certain years. Since Season 2012-2013 there has been a move towards text based reports of the weather and conditions reporting the specifics of routes, ground conditions and equipment required for tackling the ascent of Helvellyn.
 
 Consistent data points published for all seasons are below, and these will form the basis of my exploratory analysis.
 
@@ -85,7 +85,7 @@ ORDER BY 2,3;
 ```
 
 ## Location queries
-While the Weatherline team aim to summit Helvellyn each day during the winter season due to weather, ground conditions, rescue operations and team availability they will sometimes summit other fells in the Lake District, make it partially up Helvellyn or be unavailable on any single day.
+The Weatherline team aim to summit Helvellyn each day during the winter season, however due to weather, ground conditions, rescue operations and team availability they will sometimes summit other fells in the Lake District, make it partially up Helvellyn or be unavailable. 
 
 ### A count of locations where measurements were taken
 ```sql
