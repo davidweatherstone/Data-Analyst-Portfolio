@@ -24,6 +24,8 @@ Consistent data points published for all seasons are below, and these will form 
 * Average wind speed (MPH)
 * Wind direction
 
+The time of day for each summit is recorded for some seasons it is not included for all. The Fell top assessors generally begin their walk by mid morning and reach the summit between 12:00 and 14:00.
+
 ## Queries
 Using SQL I am hoping to find the answers to the following questions:
 * When does a typical season start and end?
@@ -71,6 +73,31 @@ FROM weatherline
 GROUP BY season
 ORDER BY 1;
 ```
+| season      | earliest_date | latest_date | season_length |
+|-------------|---------------|-------------|---------------|
+| 1997 - 1998 | 1997-11-24    | 1998-04-18  | 145           |
+| 1998 - 1999 | 1998-11-23    | 1999-04-17  | 145           |
+| 1999 - 2000 | 1999-12-06    | 2000-04-24  | 140           |
+| 2000 - 2001 | 2000-11-20    | 2001-02-23  | 95            |
+| 2001 - 2002 | 2001-12-10    | 2002-04-16  | 127           |
+| 2002 - 2003 | 2002-12-02    | 2003-04-20  | 139           |
+| 2003 - 2004 | 2003-12-01    | 2004-03-25  | 115           |
+| 2005 - 2006 | 2005-12-08    | 2006-03-31  | 113           |
+| 2006 - 2007 | 2006-12-04    | 2007-04-18  | 135           |
+| 2007 - 2008 | 2007-12-01    | 2008-04-20  | 141           |
+| 2008 - 2009 | 2008-11-29    | 2009-04-15  | 137           |
+| 2009 - 2010 | 2009-11-28    | 2010-04-09  | 132           |
+| 2010 - 2011 | 2010-12-04    | 2011-04-04  | 121           |
+| 2011 - 2012 | 2011-12-03    | 2012-04-09  | 128           |
+| 2012 - 2013 | 2012-12-01    | 2013-04-10  | 130           |
+| 2013 - 2014 | 2013-12-06    | 2014-04-30  | 145           |
+| 2014 - 2015 | 2014-12-05    | 2015-04-29  | 145           |
+| 2015 - 2016 | 2015-12-04    | 2016-04-27  | 145           |
+| 2016 - 2017 | 2016-12-02    | 2017-04-17  | 136           |
+| 2017 - 2018 | 2017-11-30    | 2018-04-07  | 128           |
+| 2018 - 2019 | 2018-11-29    | 2019-03-05  | 96            |
+| 2019 - 2020 | 2019-11-29    | 2020-03-05  | 97            |
+| 2020 - 2021 | 2020-11-30    | 2021-04-05  | 126           |
 
 ### Count of weather readings taken across the seasons on each day
 ```sql
@@ -83,6 +110,19 @@ FROM weatherline
 GROUP BY FORMAT(date, 'dd-MM'), MONTH(DATEADD(m, 2, date)), FORMAT(date, 'dd')
 ORDER BY 2,3;
 ```
+Sample of result:
+| date  | season_month | day_of_month | records |
+|-------|--------------|--------------|---------|
+| 01-12 | 2            | 01           | 12      |
+| 02-12 | 2            | 02           | 14      |
+| 03-12 | 2            | 03           | 15      |
+| 04-12 | 2            | 04           | 18      |
+| 05-12 | 2            | 05           | 19      |
+| 06-12 | 2            | 06           | 21      |
+| 07-12 | 2            | 07           | 21      |
+| 08-12 | 2            | 08           | 22      |
+| 09-12 | 2            | 09           | 22      |
+| 10-12 | 2            | 10           | 23      |
 
 ## Location queries
 The Weatherline team aim to summit Helvellyn each day during the winter season, however due to weather, ground conditions, rescue operations and team availability they will sometimes summit other fells in the Lake District, make it partially up Helvellyn or be unavailable. 
@@ -146,50 +186,50 @@ WITH cte AS(
 
 SELECT
 	season,
-	ROUND(AVG(november_air_temp),2) AS avg_november_air_temp,
-	ROUND(AVG(december_air_temp),2) AS avg_december_air_temp,
-	ROUND(AVG(january_air_temp),2) AS avg_january_air_temp,
-	ROUND(AVG(february_air_temp),2) AS avg_february_air_temp,
-	ROUND(AVG(march_air_temp),2) AS avg_march_air_temp,
-	ROUND(AVG(april_air_temp),2) AS avg_april_air_temp
+	CAST(AVG(november_air_temp) AS DECIMAL(10,2)) AS avg_nov_air_temp,
+	CAST(AVG(december_air_temp) AS DECIMAL(10,2)) AS avg_dec_air_temp,
+	CAST(AVG(january_air_temp) AS DECIMAL(10,2)) AS avg_jan_air_temp,
+	CAST(AVG(february_air_temp) AS DECIMAL(10,2)) AS avg_feb_air_temp,
+	CAST(AVG(march_air_temp) AS DECIMAL(10,2)) AS avg_mar_air_temp,
+	CAST(AVG(april_air_temp) AS DECIMAL(10,2)) AS avg_apr_air_temp
 FROM cte
 GROUP BY season
 ORDER BY season;
 ```
-|season|avg_november_air_temp|avg_december_air_temp|avg_january_air_temp|avg_february_air_temp|avg_march_air_temp|avg_april_air_temp|
-|------|---------------------|---------------------|--------------------|---------------------|------------------|------------------|
-|1997 - 1998|2.740000             |1.060000             |-.030000            |2.280000             |2.410000          |1.250000          |
-|1998 - 1999|1.740000             |.560000              |.310000             |-.010000             |2.810000          |5.820000          |
-|1999 - 2000|                     |-.190000             |1.430000            |.700000              |2.850000          |2.670000          |
-|2000 - 2001|2.140000             |.550000              |-1.010000           |.490000              |                  |                  |
-|2001 - 2002|                     |.200000              |1.280000            |-.270000             |2.450000          |4.460000          |
-|2002 - 2003|                     |.620000              |.220000             |.580000              |5.220000          |8.810000          |
-|2003 - 2004|                     |.870000              |.100000             |.020000              |.420000           |                  |
-|2005 - 2006|                     |.310000              |.050000             |.150000              |-1.070000         |                  |
-|2006 - 2007|                     |2.440000             |1.400000            |1.620000             |1.850000          |6.260000          |
-|2007 - 2008|                     |1.210000             |.740000             |2.860000             |-.690000          |-1.360000         |
-|2008 - 2009|-1.650000            |-.010000             |-.880000            |                     |-1.600000         |                  |
-|2009 - 2010|-2.100000            |-1.140000            |-3.330000           |-2.640000            |.730000           |.600000           |
-|2010 - 2011|                     |-3.940000            |-1.110000           |.110000              |1.720000          |5.300000          |
-|2011 - 2012|                     |-.300000             |-.540000            |-.120000             |3.960000          |2.040000          |
-|2012 - 2013|                     |-.790000             |-1.990000           |-2.050000            |-3.060000         |-3.270000         |
-|2013 - 2014|                     |.750000              |-.180000            |-.250000             |2.390000          |5.000000          |
-|2014 - 2015|                     |-.010000             |-2.170000           |-1.030000            |-.530000          |3.840000          |
-|2015 - 2016|                     |2.980000             |.000000             |-1.920000            |.730000           |1.600000          |
-|2016 - 2017|                     |2.050000             |-.060000            |.080000              |1.720000          |1.200000          |
-|2017 - 2018|                     |-.320000             |-1.160000           |-2.670000            |-.970000          |.320000           |
-|2018 - 2019|-3.300000            |.650000              |.640000             |-.910000             |-.900000          |                  |
-|2019 - 2020|                     |.540000              |.600000             |-.910000             |-.900000          |                  |
-|2020 - 2021|                     |-.310000             |-2.080000           |-.650000             |2.020000          |.040000           |
+| season      | avg_nov_air_temp | avg_dec_air_temp | avg_jan_air_temp | avg_feb_air_temp | avg_mar_air_temp | avg_apr_air_temp |
+|-------------|------------------|------------------|------------------|------------------|------------------|------------------|
+| 1997 - 1998 | 2.74             | 1.06             | -.03             | 2.28             | 2.41             | 1.25             |
+| 1998 - 1999 | 1.74             | .56              | .31              | -.01             | 2.81             | 5.82             |
+| 1999 - 2000 |                  | -.19             | 1.43             | .70              | 2.85             | 2.67             |
+| 2000 - 2001 | 2.14             | .55              | -1.01            | .49              |                  |                  |
+| 2001 - 2002 |                  | .20              | 1.28             | -.27             | 2.45             | 4.46             |
+| 2002 - 2003 |                  | .62              | .22              | .58              | 5.22             | 8.81             |
+| 2003 - 2004 |                  | .87              | .10              | .02              | .42              |                  |
+| 2005 - 2006 |                  | .31              | .05              | .15              | -1.07            |                  |
+| 2006 - 2007 |                  | 2.44             | 1.40             | 1.62             | 1.85             | 6.26             |
+| 2007 - 2008 |                  | 1.21             | .74              | 2.86             | -.69             | -1.36            |
+| 2008 - 2009 | -1.65            | -.01             | -.88             |                  | -1.60            |                  |
+| 2009 - 2010 | -2.10            | -1.14            | -3.33            | -2.64            | .73              | .60              |
+| 2010 - 2011 |                  | -3.94            | -1.11            | .11              | 1.72             | 5.30             |
+| 2011 - 2012 |                  | -.30             | -.54             | -.12             | 3.96             | 2.04             |
+| 2012 - 2013 |                  | -.79             | -1.99            | -2.05            | -3.06            | -3.27            |
+| 2013 - 2014 |                  | .75              | -.18             | -.25             | 2.39             | 5.00             |
+| 2014 - 2015 |                  | -.01             | -2.17            | -1.03            | -.53             | 3.84             |
+| 2015 - 2016 |                  | 2.98             | .00              | -1.92            | .73              | 1.60             |
+| 2016 - 2017 |                  | 2.05             | -.06             | .08              | 1.72             | 1.20             |
+| 2017 - 2018 |                  | -.32             | -1.16            | -2.67            | -.97             | .32              |
+| 2018 - 2019 | -3.30            | .65              | .64              | -.91             | -.90             |                  |
+| 2019 - 2020 |                  | .54              | .60              | -.91             | -.90             |                  |
+| 2020 - 2021 |                  | -.31             | -2.08            | -.65             | 2.02             | .04              |
 
 ### The difference between average air temperature and average wind chill temperature by month (in Celcius)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
 	MONTH(DATEADD(m, 2, DATE)) AS season_month,
-	ROUND(AVG(air_temp_c),2) AS avg_air_temp_c,
-	ROUND(AVG(wind_chill_temp_c),2) AS avg_wind_chill_temp_c,
-	ROUND(AVG(air_temp_c) - AVG(wind_chill_temp_c),2) AS avg_vs_wind_chill_diff
+	CAST(AVG(air_temp_c) AS DECIMAL(10,2)) AS avg_air_temp_c,
+	CAST(AVG(wind_chill_temp_c) AS DECIMAL(10,2)) AS avg_wind_chill_temp_c,
+	CAST(AVG(air_temp_c) - AVG(wind_chill_temp_c) AS DECIMAL(10,2)) AS avg_vs_wind_chill_diff
 FROM weatherline
 WHERE	air_temp_c IS NOT NULL AND
 		wind_chill_temp_c IS NOT NULL AND
@@ -197,23 +237,23 @@ WHERE	air_temp_c IS NOT NULL AND
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY MONTH(DATEADD(m, 2, DATE));
 ```
-|month_name|season_month|avg_air_temp_c|avg_wind_chill_temp_c|avg_vs_wind_chill_diff|
-|----------|------------|--------------|---------------------|----------------------|
-|November  |1           |-2.150000     |-8.080000            |5.930000              |
-|December  |2           |.310000       |-8.230000            |8.540000              |
-|January   |3           |-.530000      |-9.890000            |9.350000              |
-|February  |4           |-.420000      |-9.190000            |8.760000              |
-|March     |5           |1.000000      |-6.990000            |7.990000              |
-|April     |6           |3.280000      |-4.490000            |7.770000              |
+| month_name | season_month | avg_air_temp_c | avg_wind_chill_temp_c | avg_vs_wind_chill_diff |
+|------------|--------------|----------------|-----------------------|------------------------|
+| November   | 1            | -2.15          | -8.08                 | 5.93                   |
+| December   | 2            | .31            | -8.23                 | 8.54                   |
+| January    | 3            | -.53           | -9.89                 | 9.35                   |
+| February   | 4            | -.42           | -9.19                 | 8.76                   |
+| March      | 5            | 1.00           | -6.99                 | 7.99                   |
+| April      | 6            | 3.28           | -4.49                 | 7.77                   |
 
 ### The difference in temperature between the summit of Helvellyn and the base (Glenridding) temperature (in Celcius)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
 	MONTH(DATEADD(m, 2, DATE)) AS season_month,
-	ROUND(AVG(air_temp_c),2) AS avg_air_temp_c,
-	ROUND(AVG(air_temp_c_town),2) AS avg_temp_c_town,
-	ROUND(AVG(air_temp_c_town) - AVG(air_temp_c),2) AS difference
+	CAST(AVG(air_temp_c) AS DECIMAL(10,2)) AS avg_air_temp_c,
+	CAST(AVG(air_temp_c_town) AS DECIMAL(10,2)) AS avg_temp_c_town,
+	CAST(AVG(air_temp_c_town) - AVG(air_temp_c) AS DECIMAL(10,2)) AS difference
 FROM weatherline
 WHERE	location = 'Helvellyn summit' AND 
 		town = 'Glenridding' AND
@@ -222,14 +262,14 @@ WHERE	location = 'Helvellyn summit' AND
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY MONTH(DATEADD(m, 2, DATE));
 ```
-|month_name|season_month|avg_air_temp_c|avg_temp_c_town|difference|
-|----------|------------|--------------|---------------|----------|
-|November  |1           |2.140000      |7.600000       |5.460000  |
-|December  |2           |.590000       |6.190000       |5.600000  |
-|January   |3           |.320000       |6.130000       |5.800000  |
-|February  |4           |.600000       |7.180000       |6.580000  |
-|March     |5           |2.890000      |9.550000       |6.660000  |
-|April     |6           |4.860000      |11.790000      |6.930000  |
+| month_name | season_month | avg_air_temp_c | avg_temp_c_town | difference |
+|------------|--------------|----------------|-----------------|------------|
+| November   | 1            | 2.14           | 7.60            | 5.46       |
+| December   | 2            | .59            | 6.19            | 5.60       |
+| January    | 3            | .32            | 6.13            | 5.80       |
+| February   | 4            | .60            | 7.18            | 6.58       |
+| March      | 5            | 2.89           | 9.55            | 6.66       |
+| April      | 6            | 4.86           | 11.79           | 6.93       |
 
 ### The lowest temperatures (Celcius) each season
 ```sql
@@ -275,7 +315,7 @@ WITH cte AS(
 		date,
 		air_temp_c,
 		LAG(air_temp_c, 1) over(ORDER BY date) AS air_temp_lag,
-		LAG(air_temp_c, 1) over(ORDER BY date) - air_temp_c AS diff_to_prev_day
+		air_temp_c - LAG(air_temp_c, 1) over(ORDER BY date) AS diff_to_prev_day
 	FROM weatherline
 )
 
@@ -290,8 +330,8 @@ GROUP BY date, diff_to_prev_day;
 ```
 |date|diff_to_prev_day|
 |----|----------------|
-|2003-03-12|13.80           |
-|2006-01-30|-11.80          |
+|2003-03-12|-13.80           |
+|2006-01-30|11.80          |
 
 ## Wind speeds
 ### The average wind speeds (MPH) for each month throughout the seasons
@@ -319,50 +359,50 @@ WITH cte AS(
 
 SELECT
 	season,
-	ROUND(AVG(november_wind),2) AS avg_november_wind,
-	ROUND(AVG(december_wind),2) AS avg_december_wind,
-	ROUND(AVG(january_wind),2) AS avg_january_wind,
-	ROUND(AVG(february_wind),2) AS avg_february_wind,
-	ROUND(AVG(march_wind),2) AS avg_march_wind,
-	ROUND(AVG(april_wind),2) AS avg_april_wind
+	CAST(AVG(november_wind) AS DECIMAL(10,2)) AS avg_nov_wind,
+	CAST(AVG(december_wind) AS DECIMAL(10,2)) AS avg_dec_wind,
+	CAST(AVG(january_wind) AS DECIMAL(10,2)) AS avg_jan_wind,
+	CAST(AVG(february_wind) AS DECIMAL(10,2)) AS avg_feb_wind,
+	CAST(AVG(march_wind) AS DECIMAL(10,2)) AS avg_mar_wind,
+	CAST(AVG(april_wind) AS DECIMAL(10,2)) AS avg_apr_wind
 FROM cte
 GROUP BY season
 ORDER BY season;
 ```
-|season|avg_november_wind|avg_december_wind|avg_january_wind|avg_february_wind|avg_march_wind|avg_april_wind|
-|------|-----------------|-----------------|----------------|-----------------|--------------|--------------|
-|1997 - 1998|17.430000        |21.370000        |22.870000       |28.520000        |20.500000     |18.360000     |
-|1998 - 1999|15.860000        |23.100000        |23.830000       |24.330000        |21.520000     |17.060000     |
-|1999 - 2000|                 |25.120000        |23.620000       |28.590000        |17.710000     |14.470000     |
-|2000 - 2001|33.910000        |20.230000        |18.700000       |18.650000        |              |              |
-|2001 - 2002|                 |13.500000        |26.860000       |26.600000        |19.650000     |7.510000      |
-|2002 - 2003|                 |10.240000        |20.000000       |13.780000        |15.640000     |9.690000      |
-|2003 - 2004|                 |14.740000        |20.130000       |14.230000        |18.760000     |              |
-|2005 - 2006|                 |16.620000        |14.680000       |16.620000        |14.020000     |              |
-|2006 - 2007|                 |22.620000        |26.850000       |11.520000        |20.970000     |7.040000      |
-|2007 - 2008|                 |20.050000        |22.270000       |22.030000        |22.110000     |13.800000     |
-|2008 - 2009|5.500000         |16.750000        |19.770000       |                 |20.900000     |              |
-|2009 - 2010|23.430000        |17.090000        |16.730000       |10.410000        |15.650000     |15.750000     |
-|2010 - 2011|                 |15.300000        |18.560000       |17.740000        |14.470000     |45.000000     |
-|2011 - 2012|                 |22.700000        |18.920000       |20.880000        |15.090000     |19.780000     |
-|2012 - 2013|                 |17.790000        |19.220000       |17.210000        |18.100000     |19.630000     |
-|2013 - 2014|                 |30.220000        |22.780000       |21.390000        |18.070000     |6.000000      |
-|2014 - 2015|                 |25.450000        |25.910000       |19.890000        |25.480000     |12.600000     |
-|2015 - 2016|                 |28.990000        |20.560000       |19.870000        |15.890000     |13.100000     |
-|2016 - 2017|                 |20.510000        |21.050000       |27.370000        |17.510000     |26.700000     |
-|2017 - 2018|                 |20.260000        |21.120000       |15.760000        |16.390000     |20.150000     |
-|2018 - 2019|11.300000        |22.730000        |26.210000       |29.670000        |14.400000     |              |
-|2019 - 2020|                 |22.510000        |25.890000       |29.670000        |14.400000     |              |
-|2020 - 2021|                 |19.580000        |20.950000       |25.840000        |15.890000     |15.860000     |
+| season      | avg_nov_wind | avg_dec_wind | avg_jan_wind | avg_feb_wind | avg_mar_wind | avg_apr_wind |
+|-------------|--------------|--------------|--------------|--------------|--------------|--------------|
+| 1997 - 1998 | 17.43        | 21.37        | 22.87        | 28.52        | 20.50        | 18.36        |
+| 1998 - 1999 | 15.86        | 23.10        | 23.83        | 24.33        | 21.52        | 17.06        |
+| 1999 - 2000 |              | 25.12        | 23.62        | 28.59        | 17.71        | 14.47        |
+| 2000 - 2001 | 33.91        | 20.23        | 18.70        | 18.65        |              |              |
+| 2001 - 2002 |              | 13.50        | 26.86        | 26.60        | 19.65        | 7.51         |
+| 2002 - 2003 |              | 10.24        | 20.00        | 13.78        | 15.64        | 9.69         |
+| 2003 - 2004 |              | 14.74        | 20.13        | 14.23        | 18.76        |              |
+| 2005 - 2006 |              | 16.62        | 14.68        | 16.62        | 14.02        |              |
+| 2006 - 2007 |              | 22.62        | 26.85        | 11.52        | 20.97        | 7.04         |
+| 2007 - 2008 |              | 20.05        | 22.27        | 22.03        | 22.11        | 13.80        |
+| 2008 - 2009 | 5.50         | 16.75        | 19.77        |              | 20.90        |              |
+| 2009 - 2010 | 23.43        | 17.09        | 16.73        | 10.41        | 15.65        | 15.75        |
+| 2010 - 2011 |              | 15.30        | 18.56        | 17.74        | 14.47        | 45.00        |
+| 2011 - 2012 |              | 22.70        | 18.92        | 20.88        | 15.09        | 19.78        |
+| 2012 - 2013 |              | 17.79        | 19.22        | 17.21        | 18.10        | 19.63        |
+| 2013 - 2014 |              | 30.22        | 22.78        | 21.39        | 18.07        | 6.00         |
+| 2014 - 2015 |              | 25.45        | 25.91        | 19.89        | 25.48        | 12.60        |
+| 2015 - 2016 |              | 28.99        | 20.56        | 19.87        | 15.89        | 13.10        |
+| 2016 - 2017 |              | 20.51        | 21.05        | 27.37        | 17.51        | 26.70        |
+| 2017 - 2018 |              | 20.26        | 21.12        | 15.76        | 16.39        | 20.15        |
+| 2018 - 2019 | 11.30        | 22.73        | 26.21        | 29.67        | 14.40        |              |
+| 2019 - 2020 |              | 22.51        | 25.89        | 29.67        | 14.40        |              |
+| 2020 - 2021 |              | 19.58        | 20.95        | 25.84        | 15.89        | 15.86        |
 
 ### The difference between average wind speeds and max wind speeds by month (in MPH)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
 	MONTH(DATEADD(m, 2, date)) AS season_month,
-	ROUND(AVG(avg_wind_mph),2) AS avg_wind_mph,
-	ROUND(AVG(max_wind_mph),2) AS max_wind_mph,
-	ROUND(AVG(max_wind_mph) - AVG(avg_wind_mph),2) AS avg_max_wind_diff
+	CAST(AVG(avg_wind_mph) AS DECIMAL(10,2)) AS avg_wind_mph,
+	CAST(AVG(max_wind_mph) AS DECIMAL(10,2)) AS max_wind_mph,
+	CAST(AVG(max_wind_mph) - AVG(avg_wind_mph) AS DECIMAL(10,2)) AS avg_max_wind_diff
 FROM weatherline
 WHERE	avg_wind_mph IS NOT NULL AND
 		max_wind_mph IS NOT NULL AND
@@ -370,14 +410,14 @@ WHERE	avg_wind_mph IS NOT NULL AND
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY MONTH(DATEADD(m, 2, date));
 ```
-|month_name|season_month|avg_wind_mph   |max_wind_mph|avg_max_wind_diff|
-|----------|------------|---------------|------------|-----------------|
-|November  |1           |23.470000      |30.790000   |7.320000         |
-|December  |2           |20.190000      |29.370000   |9.180000         |
-|January   |3           |21.640000      |31.360000   |9.720000         |
-|February  |4           |20.890000      |30.070000   |9.180000         |
-|March     |5           |18.150000      |25.890000   |7.740000         |
-|April     |6           |14.060000      |21.230000   |7.170000         |
+| month_name | season_month | avg_wind_mph | max_wind_mph | avg_max_wind_diff |
+|------------|--------------|--------------|--------------|-------------------|
+| November   | 1            | 23.47        | 30.79        | 7.32              |
+| December   | 2            | 20.19        | 29.37        | 9.18              |
+| January    | 3            | 21.64        | 31.36        | 9.72              |
+| February   | 4            | 20.89        | 30.07        | 9.18              |
+| March      | 5            | 18.15        | 25.89        | 7.74              |
+| April      | 6            | 14.06        | 21.23        | 7.17              |
 
 ### The occurances of wind speeds experienced, matched against the Beaufort Scale - Total
 ```sql
@@ -440,17 +480,17 @@ SELECT
 	wind_force,
 	wind_speed,
 	description,
-	ROUND(COUNT(november_wind),2) AS Nov_count,
-	ROUND(COUNT(december_wind),2) AS Dec_count,
-	ROUND(COUNT(january_wind),2) AS Jan_count,
-	ROUND(COUNT(february_wind),2) AS Feb_count,
-	ROUND(COUNT(march_wind),2) AS Mar_count,
-	ROUND(COUNT(april_wind),2) AS Apr_count
+	ROUND(COUNT(november_wind),2) AS nov_count,
+	ROUND(COUNT(december_wind),2) AS dec_count,
+	ROUND(COUNT(january_wind),2) AS jan_count,
+	ROUND(COUNT(february_wind),2) AS feb_count,
+	ROUND(COUNT(march_wind),2) AS mar_count,
+	ROUND(COUNT(april_wind),2) AS apr_count
 FROM cte
 GROUP BY wind_force, wind_speed, description
 ORDER BY wind_force;
 ```
-|wind_force|wind_speed|description    |Nov_count|Dec_count|Jan_count|Feb_count|Mar_count|Apr_count|
+|wind_force|wind_speed|description    |nov_count|dec_count|jan_count|feb_count|mar_count|apr_count|
 |----------|----------|---------------|---------|---------|---------|---------|---------|---------|
 |0         |<1        |Calm           |1        |4        |7        |5        |6        |4        |
 |1         |1-3       |Light Air      |2        |22       |22       |22       |37       |16       |
@@ -509,21 +549,29 @@ SELECT
 	COUNT(wind_direction) AS count,
 	COUNT(wind_direction) * 100 / SUM(COUNT(wind_direction)) over() AS percentage
 FROM weatherline
-WHERE location = 'Helvellyn summit'
+WHERE 	location = 'Helvellyn summit' AND
+		wind_direction IS NOT NULL
 GROUP BY wind_direction
 ORDER BY COUNT(wind_direction) DESC;
 ```
-|wind_force|wind_speed|description    |Nov_count|Dec_count|Jan_count|Feb_count|Mar_count|Apr_count|
-|----------|----------|---------------|---------|---------|---------|---------|---------|---------|
-|0         |<1        |Calm           |1        |4        |7        |5        |6        |4        |
-|1         |1-3       |Light Air      |2        |22       |22       |22       |37       |16       |
-|2         |4-7       |Light Breeze   |4        |58       |60       |57       |71       |35       |
-|3         |8-12      |Gentle Breeze  |4        |102      |88       |83       |91       |27       |
-|4         |13-18     |Moderate Breeze|6        |132      |134      |98       |103      |15       |
-|5         |19-24     |Fresh Breeze   |4        |88       |108      |97       |79       |15       |
-|6         |25-31     |Strong Breeze  |0        |83       |93       |81       |64       |13       |
-|7         |32-38     |Near Gale      |3        |53       |63       |56       |40       |5        |
-|8         |39-46     |Gale           |3        |33       |50       |32       |21       |6        |
-|9         |47-54     |Strong Gale    |1        |9        |17       |10       |9        |0        |
-|10        |55-63     |Storm          |2        |6        |7        |4        |1        |1        |
-|11        |64-72     |Violent Storm  |1        |1        |1        |2        |0        |0        |
+| wind_direction | count | percentage |
+|----------------|-------|------------|
+| SW             | 502   | 20         |
+| W              | 482   | 19         |
+| NW             | 244   | 9          |
+| NE             | 181   | 7          |
+| WSW            | 175   | 7          |
+| SSW            | 128   | 5          |
+| N              | 127   | 5          |
+| S              | 121   | 4          |
+| E              | 114   | 4          |
+| WNW            | 81    | 3          |
+| NNE            | 80    | 3          |
+| SE             | 79    | 3          |
+| NNW            | 40    | 1          |
+| SSE            | 32    | 1          |
+| ENE            | 22    | 0          |
+| Varying        | 16    | 0          |
+| ESE            | 13    | 0          |
+| None           | 4     | 0          |
+| NWN            | 1     | 0          |
