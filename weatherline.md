@@ -101,7 +101,7 @@ SELECT
 	COUNT(date) AS count
 FROM weatherline
 GROUP BY location 
-ORDER BY 2 DESC;
+ORDER BY COUNT(date) DESC;
 ```
 
 ## Temperature queries
@@ -154,7 +154,7 @@ WHERE	air_temp_c IS NOT NULL AND
 		wind_chill_temp_c IS NOT NULL AND
 		location = 'Helvellyn summit'
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
-ORDER BY 2;
+ORDER BY MONTH(DATEADD(m, 2, DATE));
 ```
 
 ### The difference in temperature between the summit of Helvellyn and the base (Glenridding) temperature (in Celcius)
@@ -171,7 +171,7 @@ WHERE	location = 'Helvellyn summit' AND
 		air_temp_c_town IS NOT NULL AND
 		air_temp_c IS NOT NULL
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
-ORDER BY 2;
+ORDER BY MONTH(DATEADD(m, 2, DATE));
 ```
 
 ### The lowest temperatures (Celcius) each season
@@ -268,7 +268,7 @@ WHERE	avg_wind_mph IS NOT NULL AND
 		max_wind_mph IS NOT NULL AND
 		location = 'Helvellyn summit'
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
-ORDER BY 2;
+ORDER BY MONTH(DATEADD(m, 2, date));
 ```
 
 ### The occurances of wind speeds experienced, matched against the Beaufort Scale - Total
@@ -285,7 +285,7 @@ LEFT JOIN beaufort_scale AS bs
 WHERE	wl.avg_wind_mph IS NOT NULL AND
 		wl.location = 'Helvellyn summit'
 GROUP BY bs.wind_force, bs.wind_speed, bs.description
-ORDER BY bs.wind_force ASC;
+ORDER BY bs.wind_force;
 ```
 
 ### The occurances of wind speeds experienced, matched against the Beaufort Scale - Total by Month
@@ -326,7 +326,7 @@ SELECT
 	ROUND(COUNT(april_wind),2) AS Apr_count
 FROM cte
 GROUP BY wind_force, wind_speed, description
-ORDER BY wind_force ASC;
+ORDER BY wind_force;
 ```
 
 ## The highest wind speeds (MPH) recorded each season
@@ -350,5 +350,5 @@ SELECT
 FROM weatherline
 WHERE location = 'Helvellyn summit'
 GROUP BY wind_direction
-ORDER BY 2 DESC;
+ORDER BY COUNT(wind_direction) DESC;
 ```
