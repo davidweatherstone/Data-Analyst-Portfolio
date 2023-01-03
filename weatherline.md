@@ -27,15 +27,17 @@ Consistent data points published for all seasons are below, and these will form 
 ## Queries
 Using SQL I am hoping to find the answers to the following questions:
 * When does a typical season start and end?
-* What is the average summit temperature in each month?
+* What **locations** are used to take readings?
+* What is the average summit **temperature** in each month?
     * How does the average temperature compare to the wind chill temperature?
-	* How does the average temperature at the summit compare to the temperature in town?
-* What is the average wind speed in each month?
+	* How does the average temperature at the summit compare to the temperature at the base of the mountain?
+	* What was the lowest temperature recorded?
+    * What were the biggest swings in temperature from one day to the next?
+* What is the average **wind speed** in each month?
     * How does the average speed compare to the max speed?
 	* Categorizing of average wind speeds based on the Beaufort scale*
-* What was the lowest temperature recorded?
-* What was the highest wind speed recorded?
-* What direction does the wind generally travel?
+	* What was the highest wind speed recorded?
+    * What direction does the wind generally travel?
 
 *The Beaufort Scale is an empirical measure that relates wind speed to observed conditions at sea or on land. 
 
@@ -102,24 +104,110 @@ GROUP BY location
 ORDER BY 2 DESC;
 ```
 
-## Wind speeds
+## Temperature queries
+### The average temperatures (c) for each month throughout the seasons
+```sql
+WITH cte AS(
+	SELECT
+		season,
+		date,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
+			THEN air_temp_c END AS november_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
+			THEN air_temp_c END AS december_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
+			THEN air_temp_c END AS january_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
+			THEN air_temp_c END AS february_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
+			THEN air_temp_c END AS march_air_temp,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
+			THEN air_temp_c END AS april_air_temp
+	FROM weatherline
+	WHERE	air_temp_c IS NOT NULL AND
+			location = 'Helvellyn summit'
+)
 
-### The difference between average wind speeds and max wind speeds by month (in mph)
+SELECT
+	season,
+	ROUND(AVG(november_air_temp),2) AS avg_november_air_temp,
+	ROUND(AVG(december_air_temp),2) AS avg_december_air_temp,
+	ROUND(AVG(january_air_temp),2) AS avg_january_air_temp,
+	ROUND(AVG(february_air_temp),2) AS avg_february_air_temp,
+	ROUND(AVG(march_air_temp),2) AS avg_march_air_temp,
+	ROUND(AVG(april_air_temp),2) AS avg_april_air_temp
+FROM cte
+GROUP BY season
+ORDER BY season;
+```
+
+### The difference between average air temperature and average wind chill temperature by month (in celcius)
 ```sql
 SELECT 
 	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
-	MONTH(DATEADD(m, 2, date)) AS season_month,
-	ROUND(AVG(avg_wind_mph),2) AS avg_wind_mph,
-	ROUND(AVG(max_wind_mph),2) AS max_wind_mph,
-	ROUND(AVG(max_wind_mph) - AVG(avg_wind_mph),2) AS avg_max_wind_diff
+	MONTH(DATEADD(m, 2, DATE)) AS season_month,
+	ROUND(AVG(air_temp_c),2) AS avg_air_temp_c,
+	ROUND(AVG(wind_chill_temp_c),2) AS avg_wind_chill_temp_c,
+	ROUND(AVG(air_temp_c) - AVG(wind_chill_temp_c),2) AS avg_vs_wind_chill_diff
 FROM weatherline
-WHERE	avg_wind_mph IS NOT NULL AND
-		max_wind_mph IS NOT NULL AND
+WHERE	air_temp_c IS NOT NULL AND
+		wind_chill_temp_c IS NOT NULL AND
 		location = 'Helvellyn summit'
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY 2;
 ```
 
+### The difference in temperature between the summit of Helvellyn and the base (Glenridding) temperature (in c)
+```sql
+SELECT 
+	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
+	MONTH(DATEADD(m, 2, DATE)) AS season_month,
+	ROUND(AVG(air_temp_c),2) AS avg_air_temp_c,
+	ROUND(AVG(air_temp_c_town),2) AS avg_temp_c_town,
+	ROUND(AVG(air_temp_c_town) - AVG(air_temp_c),2) AS difference
+FROM weatherline
+WHERE	location = 'Helvellyn summit' AND 
+		town = 'Glenridding' AND
+		air_temp_c_town IS NOT NULL AND
+		air_temp_c IS NOT NULL
+GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
+ORDER BY 2;
+```
+
+### The lowest temperatures (c) each season
+```sql
+SELECT
+	season,
+	MIN(air_temp_c) AS lowest_temperature_c,
+	MIN(wind_chill_temp_c) AS lowest_wind_chill_temperature_c
+FROM weatherline
+WHERE location = 'Helvellyn summit'
+GROUP BY season
+ORDER BY season;
+```
+
+### The largest swings in temperature (c) from one day to the next
+```sql
+WITH cte AS(
+	SELECT
+		date,
+		air_temp_c,
+		LAG(air_temp_c, 1) over(ORDER BY date) AS air_temp_lag,
+		LAG(air_temp_c, 1) over(ORDER BY date) - air_temp_c AS diff_to_prev_day
+	FROM weatherline
+)
+
+SELECT
+date,
+diff_to_prev_day
+FROM cte
+WHERE	diff_to_prev_day IS NOT NULL AND
+		diff_to_prev_day = (SELECT MAX(diff_to_prev_day) FROM cte) OR 
+		diff_to_prev_day = (SELECT MIN(diff_to_prev_day) FROM cte)
+GROUP BY date, diff_to_prev_day;
+```
+
+## Wind speeds
 ### The average wind speeds (mph) for each month throughout the seasons
 ```sql
 WITH cte AS(
@@ -167,6 +255,22 @@ GROUP BY season
 ORDER BY season;
 ```
 
+### The difference between average wind speeds and max wind speeds by month (in mph)
+```sql
+SELECT 
+	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
+	MONTH(DATEADD(m, 2, date)) AS season_month,
+	ROUND(AVG(avg_wind_mph),2) AS avg_wind_mph,
+	ROUND(AVG(max_wind_mph),2) AS max_wind_mph,
+	ROUND(AVG(max_wind_mph) - AVG(avg_wind_mph),2) AS avg_max_wind_diff
+FROM weatherline
+WHERE	avg_wind_mph IS NOT NULL AND
+		max_wind_mph IS NOT NULL AND
+		location = 'Helvellyn summit'
+GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
+ORDER BY 2;
+```
+
 ### The occurances of wind speeds experienced, matched against the Beaufort Scale - total
 ```sql
 SELECT
@@ -187,147 +291,54 @@ ORDER BY bs.wind_force ASC;
 ### The occurances of wind speeds experienced, matched against the Beaufort Scale - totals by month
 ```sql
 WITH cte AS(
-SELECT
-	bs.wind_force,
-	bs.wind_speed,
-	bs.description,
-	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
-		THEN wl.avg_wind_mph END AS november_wind,
-	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
-		THEN wl.avg_wind_mph END AS december_wind,
-	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
-		THEN wl.avg_wind_mph END AS january_wind,
-	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
-		THEN wl.avg_wind_mph END AS february_wind,
-	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
-		THEN wl.avg_wind_mph END AS march_wind,
-	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
-		THEN wl.avg_wind_mph END AS april_wind
-FROM weatherline AS wl
-LEFT JOIN beaufort_scale AS bs
-	ON wl.avg_wind_mph BETWEEN bs.low_end_speed AND bs.high_end_speed
-WHERE	wl.avg_wind_mph IS NOT NULL AND
-		wl.location = 'Helvellyn summit'
+	SELECT
+		bs.wind_force,
+		bs.wind_speed,
+		bs.description,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
+			THEN wl.avg_wind_mph END AS november_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
+			THEN wl.avg_wind_mph END AS december_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
+			THEN wl.avg_wind_mph END AS january_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
+			THEN wl.avg_wind_mph END AS february_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
+			THEN wl.avg_wind_mph END AS march_wind,
+		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
+			THEN wl.avg_wind_mph END AS april_wind
+	FROM weatherline AS wl
+	LEFT JOIN beaufort_scale AS bs
+		ON wl.avg_wind_mph BETWEEN bs.low_end_speed AND bs.high_end_speed
+	WHERE	wl.avg_wind_mph IS NOT NULL AND
+			wl.location = 'Helvellyn summit'
 )
 
 SELECT
-wind_force,
-wind_speed,
-description,
-ROUND(COUNT(november_wind),2) AS Nov_count,
-ROUND(COUNT(december_wind),2) AS Dec_count,
-ROUND(COUNT(january_wind),2) AS Jan_count,
-ROUND(COUNT(february_wind),2) AS Feb_count,
-ROUND(COUNT(march_wind),2) AS Mar_count,
-ROUND(COUNT(april_wind),2) AS Apr_count
+	wind_force,
+	wind_speed,
+	description,
+	ROUND(COUNT(november_wind),2) AS Nov_count,
+	ROUND(COUNT(december_wind),2) AS Dec_count,
+	ROUND(COUNT(january_wind),2) AS Jan_count,
+	ROUND(COUNT(february_wind),2) AS Feb_count,
+	ROUND(COUNT(march_wind),2) AS Mar_count,
+	ROUND(COUNT(april_wind),2) AS Apr_count
 FROM cte
 GROUP BY wind_force, wind_speed, description
 ORDER BY wind_force ASC;
 ```
 
-## Temperatures
-### The difference between average air temperature and average wind chill temperature by month (in celcius)
-```sql
-SELECT 
-	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
-	MONTH(DATEADD(m, 2, DATE)) AS season_month,
-	ROUND(AVG(air_temp_c),2) AS avg_air_temp_c,
-	ROUND(AVG(wind_chill_temp_c),2) AS avg_wind_chill_temp_c,
-	ROUND(AVG(air_temp_c) - AVG(wind_chill_temp_c),2) AS avg_vs_wind_chill_diff
-FROM weatherline
-WHERE	air_temp_c IS NOT NULL AND
-		wind_chill_temp_c IS NOT NULL AND
-		location = 'Helvellyn summit'
-GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
-ORDER BY 2;
-```
-
-### The average temperatures (c) for each month throughout the seasons
-```sql
-WITH cte AS(
-	SELECT
-		season,
-		date,
-		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
-			THEN air_temp_c END AS november_air_temp,
-		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
-			THEN air_temp_c END AS december_air_temp,
-		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
-			THEN air_temp_c END AS january_air_temp,
-		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
-			THEN air_temp_c END AS february_air_temp,
-		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
-			THEN air_temp_c END AS march_air_temp,
-		CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
-			THEN air_temp_c END AS april_air_temp
-	FROM weatherline
-	WHERE	air_temp_c IS NOT NULL AND
-			location = 'Helvellyn summit'
-)
-
-SELECT
-	season,
-	ROUND(AVG(november_air_temp),2) AS avg_november_air_temp,
-	ROUND(AVG(december_air_temp),2) AS avg_december_air_temp,
-	ROUND(AVG(january_air_temp),2) AS avg_january_air_temp,
-	ROUND(AVG(february_air_temp),2) AS avg_february_air_temp,
-	ROUND(AVG(march_air_temp),2) AS avg_march_air_temp,
-	ROUND(AVG(april_air_temp),2) AS avg_april_air_temp
-FROM cte
-GROUP BY season
-ORDER BY season;
-```
-
-### The lowest temperatures (c) each season
+## The highest wind speeds recorded each season
 ```sql
 SELECT
 	season,
-	MIN(air_temp_c) AS lowest_temperature_c,
-	MIN(wind_chill_temp_c) AS lowest_wind_chill_temperature_c
+	MAX(avg_wind_mph) AS highest_avg_wind_speed_mph,
+	MAX(max_wind_mph) AS highest_max_wind_speed_mph
 FROM weatherline
 WHERE location = 'Helvellyn summit'
 GROUP BY season
 ORDER BY season;
-```
-
-### The summit temperature difference versus town (Glenridding) temperature (in c)
-
-```sql
-SELECT 
-	DATENAME(MONTH, DATEADD(MONTH, 0, date)) AS 'month_name',
-	MONTH(DATEADD(m, 2, DATE)) AS season_month,
-	ROUND(AVG(air_temp_c),2) AS avg_air_temp_c,
-	ROUND(AVG(air_temp_c_town),2) AS avg_temp_c_town,
-	ROUND(AVG(air_temp_c_town) - AVG(air_temp_c),2) AS difference
-FROM weatherline
-WHERE	location = 'Helvellyn summit' AND 
-		town = 'Glenridding' AND
-		air_temp_c_town IS NOT NULL AND
-		air_temp_c IS NOT NULL
-GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
-ORDER BY 2;
-```
-
-### The largest swings in temperature (c) from one day to the next
-
-```sql
-WITH cte AS(
-SELECT
-date,
-air_temp_c,
-LAG(air_temp_c, 1) over(ORDER BY date) AS air_temp_lag,
-LAG(air_temp_c, 1) over(ORDER BY date) - air_temp_c AS diff_to_prev_day
-FROM weatherline
-)
-
-SELECT
-date,
-diff_to_prev_day
-FROM cte
-WHERE	diff_to_prev_day IS NOT NULL AND
-		diff_to_prev_day = (SELECT MAX(diff_to_prev_day) FROM cte) OR 
-		diff_to_prev_day = (SELECT MIN(diff_to_prev_day) FROM cte)
-GROUP BY date, diff_to_prev_day
 ```
 
 ## Wind direction
