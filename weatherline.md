@@ -32,9 +32,14 @@ Using SQL I am hoping to find the answers to the following questions:
 	* How does the average temperature at the summit compare to the temperature in town?
 * What is the average wind speed in each month?
     * How does the average speed compare to the max speed?
+	* Categorizing of average wind speeds based on the Beaufort scale*
 * What was the lowest temperature recorded?
 * What was the highest wind speed recorded?
 * What direction does the wind generally travel?
+
+*The Beaufort Scale is an empirical measure that relates wind speed to observed conditions at sea or on land. 
+
+https://www.rmets.org/metmatters/beaufort-wind-scale
 
 ## Methods
 1. Collect the data by downloading it from the Lake District Weatherline website
@@ -44,7 +49,7 @@ Using SQL I am hoping to find the answers to the following questions:
     * Renaming locations to standard names
     * Correcting the date format for each year
     * Standardizing readings, e.g. removing text from number fields
-5. Import the flat file in to MS SQL Server to query the data
+5. Import the .CSV flat file in to MS SQL Server to query the data
 
 ## Season length
 According to the met office, the metreoroligical definition of winter starts on 1 December each year and ends on 28 (or 29 during a Leap Year) February. While astronomical winter starts on or around 21 December and ends on 20 March. 
@@ -162,6 +167,64 @@ GROUP BY season
 ORDER BY season;
 ```
 
+### The occurances of wind speeds experienced, matched against the Beaufort Scale - total
+```sql
+SELECT
+	bs.wind_force,
+	bs.wind_speed,
+	bs.description,
+	COUNT(wl.avg_wind_mph) AS count,
+	COUNT(wl.avg_wind_mph) * 100 / SUM(COUNT(wl.avg_wind_mph)) over() AS percentage
+FROM weatherline AS wl
+LEFT JOIN beaufort_scale AS bs
+	ON wl.avg_wind_mph BETWEEN bs.low_end_speed AND bs.high_end_speed
+WHERE	wl.avg_wind_mph IS NOT NULL AND
+		wl.location = 'Helvellyn summit'
+GROUP BY bs.wind_force, bs.wind_speed, bs.description
+ORDER BY bs.wind_force ASC;
+```
+
+### The occurances of wind speeds experienced, matched against the Beaufort Scale - totals by month
+```sql
+WITH cte AS(
+SELECT
+	bs.wind_force,
+	bs.wind_speed,
+	bs.description,
+	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'November' 
+		THEN wl.avg_wind_mph END AS november_wind,
+	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'December' 
+		THEN wl.avg_wind_mph END AS december_wind,
+	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'January' 
+		THEN wl.avg_wind_mph END AS january_wind,
+	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'February' 
+		THEN wl.avg_wind_mph END AS february_wind,
+	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'March' 
+		THEN wl.avg_wind_mph END AS march_wind,
+	CASE WHEN DATENAME(MONTH, DATEADD(MONTH, 0, date)) = 'April' 
+		THEN wl.avg_wind_mph END AS april_wind
+FROM weatherline AS wl
+LEFT JOIN beaufort_scale AS bs
+	ON wl.avg_wind_mph BETWEEN bs.low_end_speed AND bs.high_end_speed
+WHERE	wl.avg_wind_mph IS NOT NULL AND
+		wl.location = 'Helvellyn summit'
+)
+
+SELECT
+wind_force,
+wind_speed,
+description,
+ROUND(COUNT(november_wind),2) AS Nov_count,
+ROUND(COUNT(december_wind),2) AS Dec_count,
+ROUND(COUNT(january_wind),2) AS Jan_count,
+ROUND(COUNT(february_wind),2) AS Feb_count,
+ROUND(COUNT(march_wind),2) AS Mar_count,
+ROUND(COUNT(april_wind),2) AS Apr_count
+FROM cte
+GROUP BY wind_force, wind_speed, description
+ORDER BY wind_force ASC;
+```
+
 ## Temperatures
 ### The difference between average air temperature and average wind chill temperature by month (in celcius)
 ```sql
@@ -243,6 +306,28 @@ WHERE	location = 'Helvellyn summit' AND
 		air_temp_c IS NOT NULL
 GROUP BY DATENAME(MONTH, DATEADD(MONTH, 0, date)), MONTH(DATEADD(m, 2, DATE))
 ORDER BY 2;
+```
+
+### The largest swings in temperature (c) from one day to the next
+
+```sql
+WITH cte AS(
+SELECT
+date,
+air_temp_c,
+LAG(air_temp_c, 1) over(ORDER BY date) AS air_temp_lag,
+LAG(air_temp_c, 1) over(ORDER BY date) - air_temp_c AS diff_to_prev_day
+FROM weatherline
+)
+
+SELECT
+date,
+diff_to_prev_day
+FROM cte
+WHERE	diff_to_prev_day IS NOT NULL AND
+		diff_to_prev_day = (SELECT MAX(diff_to_prev_day) FROM cte) OR 
+		diff_to_prev_day = (SELECT MIN(diff_to_prev_day) FROM cte)
+GROUP BY date, diff_to_prev_day
 ```
 
 ## Wind direction
