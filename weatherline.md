@@ -50,7 +50,7 @@ https://www.rmets.org/metmatters/beaufort-wind-scale
 2. Use Excel to standardize the tables by renaming and rearranging the columns
 3. Use Power Query to append the tables together
 4. Use Excel to clean the data
-    * Renaming locations to standard names
+    * Renaming locations to uniform names
     * Correcting the date format for each year
     * Standardizing readings, e.g. removing text from number fields
 5. Import the .CSV flat file in to MS SQL Server to query the data
