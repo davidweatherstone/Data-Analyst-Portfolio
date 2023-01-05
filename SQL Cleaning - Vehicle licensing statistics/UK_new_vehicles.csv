@@ -1,0 +1,595 @@
+Date,Year,Month_name,Month_number,Units,Body_type,Petrol,Diesel,Hybrid_electric_petrol,Hybrid_electric_diesel,Plug_in_hybrid_electric_petrol,Plug_in_hybrid_electric_diesel,Battery_electric,Range_extended_electric,Fuel_cell_electric,Gas,Other_fuel_types,Total,Plug_in,Zero_emission
+July 2014,2014,July,7,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+August 2014,2014,August,8,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+September 2014,2014,September,9,Thousands,Buses and coaches,.00,1.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.00,.00,.00
+October 2014,2014,October,10,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+November 2014,2014,November,11,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+December 2014,2014,December,12,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+January 2015,2015,January,1,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+February 2015,2015,February,2,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+March 2015,2015,March,3,Thousands,Buses and coaches,.00,1.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.30,.00,.00
+April 2015,2015,April,4,Thousands,Buses and coaches,.00,.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,.90,.00,.00
+May 2015,2015,May,5,Thousands,Buses and coaches,.00,.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,.90,.00,.00
+June 2015,2015,June,6,Thousands,Buses and coaches,.00,.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,.90,.00,.00
+July 2015,2015,July,7,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+August 2015,2015,August,8,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+September 2015,2015,September,9,Thousands,Buses and coaches,.00,1.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.20,.00,.00
+October 2015,2015,October,10,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+November 2015,2015,November,11,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+December 2015,2015,December,12,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+January 2016,2016,January,1,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+February 2016,2016,February,2,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+March 2016,2016,March,3,Thousands,Buses and coaches,.00,1.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.30,.00,.00
+April 2016,2016,April,4,Thousands,Buses and coaches,.00,.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,.90,.00,.00
+May 2016,2016,May,5,Thousands,Buses and coaches,.00,.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,.90,.00,.00
+June 2016,2016,June,6,Thousands,Buses and coaches,.00,1.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.00,.00,.00
+July 2016,2016,July,7,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+August 2016,2016,August,8,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+September 2016,2016,September,9,Thousands,Buses and coaches,.00,1.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.50,.00,.00
+October 2016,2016,October,10,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+November 2016,2016,November,11,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+December 2016,2016,December,12,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+January 2017,2017,January,1,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+February 2017,2017,February,2,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+March 2017,2017,March,3,Thousands,Buses and coaches,.00,1.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.20,.00,.00
+April 2017,2017,April,4,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+May 2017,2017,May,5,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+June 2017,2017,June,6,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+July 2017,2017,July,7,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+August 2017,2017,August,8,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+September 2017,2017,September,9,Thousands,Buses and coaches,.00,1.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.20,.00,.00
+October 2017,2017,October,10,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+November 2017,2017,November,11,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+December 2017,2017,December,12,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+January 2018,2018,January,1,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+February 2018,2018,February,2,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+March 2018,2018,March,3,Thousands,Buses and coaches,.00,1.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.00,.00,.00
+April 2018,2018,April,4,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+May 2018,2018,May,5,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+June 2018,2018,June,6,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+July 2018,2018,July,7,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+August 2018,2018,August,8,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+September 2018,2018,September,9,Thousands,Buses and coaches,.00,1.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.10,.00,.00
+October 2018,2018,October,10,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+November 2018,2018,November,11,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+December 2018,2018,December,12,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+January 2019,2019,January,1,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+February 2019,2019,February,2,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+March 2019,2019,March,3,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+April 2019,2019,April,4,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+May 2019,2019,May,5,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+June 2019,2019,June,6,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+July 2019,2019,July,7,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+August 2019,2019,August,8,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+September 2019,2019,September,9,Thousands,Buses and coaches,.00,1.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.00,.00,.00
+October 2019,2019,October,10,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+November 2019,2019,November,11,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+December 2019,2019,December,12,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+January 2020,2020,January,1,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+February 2020,2020,February,2,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+March 2020,2020,March,3,Thousands,Buses and coaches,.00,.90,.00,.00,.00,.00,.10,.00,.00,.00,.00,1.00,.10,.10
+April 2020,2020,April,4,Thousands,Buses and coaches,.00,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.10,.00,.00
+May 2020,2020,May,5,Thousands,Buses and coaches,.00,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.10,.00,.00
+June 2020,2020,June,6,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+July 2020,2020,July,7,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+August 2020,2020,August,8,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+September 2020,2020,September,9,Thousands,Buses and coaches,.00,.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.90,.00,.00
+October 2020,2020,October,10,Thousands,Buses and coaches,.00,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+November 2020,2020,November,11,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+December 2020,2020,December,12,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+January 2021,2021,January,1,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+February 2021,2021,February,2,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+March 2021,2021,March,3,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+April 2021,2021,April,4,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+May 2021,2021,May,5,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+June 2021,2021,June,6,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+July 2021,2021,July,7,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+August 2021,2021,August,8,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+September 2021,2021,September,9,Thousands,Buses and coaches,.00,.50,.00,.00,.00,.00,.10,.00,.00,.00,.00,.60,.10,.10
+October 2021,2021,October,10,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.10,.00,.00,.00,.00,.40,.10,.10
+November 2021,2021,November,11,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.10,.00,.00,.00,.00,.40,.10,.10
+December 2021,2021,December,12,Thousands,Buses and coaches,.00,.30,.00,.00,.00,.00,.10,.00,.00,.00,.00,.30,.10,.10
+January 2022,2022,January,1,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,.30,.10,.10
+February 2022,2022,February,2,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,.30,.10,.10
+March 2022,2022,March,3,Thousands,Buses and coaches,.00,.70,.00,.00,.00,.00,.10,.00,.00,.00,.00,.80,.10,.10
+April 2022,2022,April,4,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+May 2022,2022,May,5,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+June 2022,2022,June,6,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+July 2022,2022,July,7,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+August 2022,2022,August,8,Thousands,Buses and coaches,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+September 2022,2022,September,9,Thousands,Buses and coaches,.00,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+July 2014,2014,July,7,Thousands,Cars,80.80,92.90,2.00,.20,.50,.00,.50,.10,.00,.00,.00,177.00,1.10,.50
+August 2014,2014,August,8,Thousands,Cars,36.30,36.30,.60,.10,.20,.00,.20,.10,.00,.00,.00,73.80,.50,.20
+September 2014,2014,September,9,Thousands,Cars,213.90,204.70,6.50,.30,1.70,.00,1.20,.20,.00,.00,.00,428.60,3.10,1.20
+October 2014,2014,October,10,Thousands,Cars,83.30,93.60,2.80,.20,1.10,.00,.50,.10,.00,.00,.00,181.60,1.80,.50
+November 2014,2014,November,11,Thousands,Cars,81.30,89.20,2.80,.20,1.10,.00,.60,.20,.00,.00,.00,175.40,1.90,.60
+December 2014,2014,December,12,Thousands,Cars,79.00,84.40,2.00,.10,.90,.00,1.10,.20,.00,.00,.00,167.80,2.20,1.10
+January 2015,2015,January,1,Thousands,Cars,79.90,82.20,2.60,.10,1.10,.00,.50,.10,.00,.00,.00,166.70,1.70,.50
+February 2015,2015,February,2,Thousands,Cars,38.00,38.90,1.00,.10,.40,.00,.30,.10,.00,.00,.00,78.80,.80,.30
+March 2015,2015,March,3,Thousands,Cars,250.50,230.30,7.40,.60,3.90,.00,1.90,.30,.00,.00,.00,495.00,6.20,1.90
+April 2015,2015,April,4,Thousands,Cars,87.70,94.90,3.10,.40,.90,.00,.50,.10,.00,.00,.00,187.60,1.60,.50
+May 2015,2015,May,5,Thousands,Cars,97.70,97.50,2.70,.40,1.30,.00,.60,.10,.00,.00,.00,200.20,2.00,.60
+June 2015,2015,June,6,Thousands,Cars,127.90,124.80,4.10,.40,1.60,.00,.90,.10,.00,.00,.00,259.90,2.60,.90
+July 2015,2015,July,7,Thousands,Cars,88.20,88.40,2.40,.30,1.10,.00,.40,.10,.00,.00,.00,181.00,1.70,.40
+August 2015,2015,August,8,Thousands,Cars,40.20,39.10,1.00,.10,.50,.00,.30,.10,.00,.00,.00,81.30,.90,.30
+September 2015,2015,September,9,Thousands,Cars,239.80,213.30,7.60,.60,2.20,.00,1.60,.20,.00,.00,.00,465.40,4.00,1.60
+October 2015,2015,October,10,Thousands,Cars,83.00,91.90,3.20,.20,1.20,.00,.70,.10,.00,.00,.00,180.30,2.00,.70
+November 2015,2015,November,11,Thousands,Cars,83.80,92.50,2.80,.20,1.50,.00,.80,.20,.00,.00,.00,181.80,2.50,.80
+December 2015,2015,December,12,Thousands,Cars,86.40,90.50,2.80,.20,1.40,.00,1.50,.20,.00,.00,.00,183.00,3.20,1.50
+January 2016,2016,January,1,Thousands,Cars,82.90,83.10,3.60,.10,1.50,.00,.60,.20,.00,.00,.00,172.10,2.30,.60
+February 2016,2016,February,2,Thousands,Cars,42.70,41.30,1.00,.00,1.00,.00,.20,.00,.00,.00,.00,86.40,1.30,.20
+March 2016,2016,March,3,Thousands,Cars,262.50,242.00,9.40,.30,5.20,.00,2.40,.20,.00,.00,.00,522.10,7.80,2.40
+April 2016,2016,April,4,Thousands,Cars,90.20,94.40,3.40,.10,2.20,.00,.60,.10,.00,.00,.00,191.10,3.00,.60
+May 2016,2016,May,5,Thousands,Cars,97.70,102.70,3.20,.10,1.90,.00,.50,.10,.00,.00,.00,206.20,2.50,.50
+June 2016,2016,June,6,Thousands,Cars,127.50,122.40,5.00,.10,2.20,.00,1.00,.10,.00,.00,.00,258.40,3.40,1.00
+July 2016,2016,July,7,Thousands,Cars,88.70,87.20,3.10,.10,1.90,.10,.50,.10,.00,.00,.00,181.50,2.40,.50
+August 2016,2016,August,8,Thousands,Cars,42.50,39.50,1.40,.00,.80,.00,.30,.10,.00,.00,.00,84.70,1.20,.30
+September 2016,2016,September,9,Thousands,Cars,237.60,218.60,9.40,.20,3.90,.10,2.20,.50,.00,.00,.00,472.50,6.70,2.20
+October 2016,2016,October,10,Thousands,Cars,86.70,89.10,3.60,.10,1.80,.10,.40,.20,.00,.00,.00,182.00,2.50,.40
+November 2016,2016,November,11,Thousands,Cars,90.50,89.30,3.90,.10,2.00,.00,.60,.10,.00,.00,.00,186.60,2.80,.60
+December 2016,2016,December,12,Thousands,Cars,89.60,84.30,3.10,.20,1.70,.10,1.20,.20,.00,.00,.00,180.20,3.10,1.20
+January 2017,2017,January,1,Thousands,Cars,89.80,79.30,4.50,.00,1.50,.00,1.00,.20,.00,.00,.00,176.50,2.80,1.00
+February 2017,2017,February,2,Thousands,Cars,44.00,37.20,1.90,.00,.80,.00,.50,.10,.00,.00,.00,84.50,1.40,.50
+March 2017,2017,March,3,Thousands,Cars,296.70,245.90,14.30,.20,4.80,.10,3.20,.40,.00,.00,.00,565.60,8.50,3.20
+April 2017,2017,April,4,Thousands,Cars,77.50,68.60,3.50,.00,1.90,.10,.70,.10,.00,.00,.00,152.50,2.80,.70
+May 2017,2017,May,5,Thousands,Cars,97.60,82.20,5.00,.10,2.10,.10,1.00,.20,.00,.00,.00,188.10,3.20,1.00
+June 2017,2017,June,6,Thousands,Cars,130.30,104.60,6.30,.00,2.70,.10,1.50,.30,.00,.00,.00,245.80,4.50,1.50
+July 2017,2017,July,7,Thousands,Cars,85.00,69.70,5.30,.00,2.60,.00,.90,.10,.00,.00,.00,163.60,3.60,.90
+August 2017,2017,August,8,Thousands,Cars,43.70,31.10,2.40,.00,1.20,.00,.50,.00,.00,.00,.00,78.80,1.70,.50
+September 2017,2017,September,9,Thousands,Cars,234.10,171.60,14.60,.10,5.40,.10,2.20,.50,.00,.00,.00,428.60,8.20,2.20
+October 2017,2017,October,10,Thousands,Cars,89.10,63.30,4.80,.00,2.70,.10,.70,.20,.00,.00,.00,160.70,3.50,.70
+November 2017,2017,November,11,Thousands,Cars,94.60,62.60,4.80,.10,3.10,.00,.90,.20,.00,.00,.00,166.30,4.20,.90
+December 2017,2017,December,12,Thousands,Cars,87.10,57.40,4.10,.10,3.40,.00,1.00,.10,.00,.00,.00,153.30,4.60,1.00
+January 2018,2018,January,1,Thousands,Cars,97.20,59.20,5.80,.10,2.60,.00,.70,.10,.00,.00,.00,165.70,3.40,.70
+February 2018,2018,February,2,Thousands,Cars,50.20,29.00,2.10,.00,1.10,.00,.40,.10,.00,.00,.00,82.90,1.60,.40
+March 2018,2018,March,3,Thousands,Cars,297.80,154.00,14.90,.10,6.10,.10,3.10,.20,.00,.00,.00,476.20,9.50,3.10
+April 2018,2018,April,4,Thousands,Cars,108.10,51.40,5.60,.00,2.80,.00,1.00,.10,.00,.00,.00,169.00,3.90,1.00
+May 2018,2018,May,5,Thousands,Cars,120.40,62.30,6.30,.00,3.80,.00,1.10,.10,.00,.00,.00,194.20,5.10,1.10
+June 2018,2018,June,6,Thousands,Cars,146.70,74.90,9.40,.00,4.50,.00,1.40,.20,.00,.00,.00,237.20,6.20,1.40
+July 2018,2018,July,7,Thousands,Cars,102.30,53.00,6.40,.00,3.50,.00,.90,.20,.00,.00,.00,166.20,4.50,.90
+August 2018,2018,August,8,Thousands,Cars,60.20,28.40,3.70,.00,3.20,.00,.70,.10,.00,.00,.00,96.30,4.00,.70
+September 2018,2018,September,9,Thousands,Cars,218.80,99.20,17.00,.00,4.20,.00,2.30,.40,.00,.00,.00,341.90,7.00,2.30
+October 2018,2018,October,10,Thousands,Cars,95.80,49.70,6.40,.00,3.20,.00,1.30,.30,.00,.00,.00,156.70,4.80,1.30
+November 2018,2018,November,11,Thousands,Cars,98.30,52.20,6.50,.00,3.20,.00,1.40,.20,.00,.00,.00,161.80,4.80,1.40
+December 2018,2018,December,12,Thousands,Cars,94.10,42.40,3.80,.00,3.70,.00,1.50,.30,.00,.00,.00,145.90,5.50,1.50
+January 2019,2019,January,1,Thousands,Cars,104.80,47.20,8.00,.00,2.20,.00,1.40,.10,.00,.00,.00,163.70,3.70,1.40
+February 2019,2019,February,2,Thousands,Cars,54.50,24.80,3.10,.00,1.30,.00,.70,.00,.00,.00,.00,84.50,2.10,.70
+March 2019,2019,March,3,Thousands,Cars,313.70,122.20,17.50,.00,4.70,.10,4.00,.10,.00,.00,.00,462.40,8.90,4.00
+April 2019,2019,April,4,Thousands,Cars,105.40,47.70,7.20,.00,1.80,.10,1.60,.00,.00,.00,.00,163.80,3.50,1.60
+May 2019,2019,May,5,Thousands,Cars,121.90,51.30,8.30,.00,2.30,.10,2.00,.00,.00,.00,.00,185.90,4.40,2.00
+June 2019,2019,June,6,Thousands,Cars,151.80,60.20,9.20,.00,2.30,.00,2.80,.00,.00,.00,.00,226.40,5.10,2.80
+July 2019,2019,July,7,Thousands,Cars,105.20,42.00,8.50,.00,1.70,.10,2.00,.00,.00,.00,.00,159.50,3.80,2.00
+August 2019,2019,August,8,Thousands,Cars,60.90,25.60,4.70,.00,.90,.00,3.20,.00,.00,.00,.00,95.40,4.10,3.20
+September 2019,2019,September,9,Thousands,Cars,230.60,84.60,18.10,.30,5.00,.20,7.70,.00,.00,.00,.00,346.60,13.00,7.70
+October 2019,2019,October,10,Thousands,Cars,92.40,38.50,9.30,.10,3.00,.10,3.20,.00,.00,.00,.00,146.60,6.30,3.20
+November 2019,2019,November,11,Thousands,Cars,101.40,41.10,8.70,.30,4.30,.10,4.70,.00,.00,.00,.00,160.50,9.10,4.70
+December 2019,2019,December,12,Thousands,Cars,97.60,36.90,6.80,.60,4.30,.20,4.90,.00,.00,.00,.00,151.30,9.40,5.00
+January 2020,2020,January,1,Thousands,Cars,98.00,33.90,10.90,.50,4.70,.10,4.10,.00,.00,.00,.00,152.10,8.90,4.10
+February 2020,2020,February,2,Thousands,Cars,52.20,19.00,5.70,.60,2.00,.10,2.50,.00,.00,.00,.00,82.10,4.50,2.50
+March 2020,2020,March,3,Thousands,Cars,164.80,53.60,19.10,1.30,6.70,.20,11.70,.00,.00,.00,.00,257.40,18.60,11.70
+April 2020,2020,April,4,Thousands,Cars,1.80,.80,.10,.00,.10,.00,1.40,.00,.00,.00,.00,4.20,1.50,1.40
+May 2020,2020,May,5,Thousands,Cars,12.20,4.00,1.00,.20,.80,.00,2.50,.00,.00,.00,.00,20.60,3.30,2.50
+June 2020,2020,June,6,Thousands,Cars,93.50,26.10,12.10,1.00,4.70,.30,8.90,.00,.00,.10,.00,146.70,13.90,8.90
+July 2020,2020,July,7,Thousands,Cars,110.60,33.50,15.70,1.50,7.40,.20,8.20,.00,.00,.10,.00,177.30,15.70,8.20
+August 2020,2020,August,8,Thousands,Cars,56.30,17.00,7.70,.90,2.80,.10,5.50,.00,.00,.10,.00,90.30,8.40,5.50
+September 2020,2020,September,9,Thousands,Cars,200.10,55.50,37.30,4.10,11.90,.50,22.00,.00,.00,.40,.00,331.80,34.40,22.00
+October 2020,2020,October,10,Thousands,Cars,82.50,24.00,16.20,2.80,7.40,.40,9.20,.00,.00,.10,.00,142.60,17.00,9.30
+November 2020,2020,November,11,Thousands,Cars,66.30,18.30,11.50,2.40,7.50,.30,10.10,.00,.00,.10,.00,116.50,17.90,10.10
+December 2020,2020,December,12,Thousands,Cars,69.50,18.80,13.00,2.60,8.20,.80,21.90,.00,.00,.00,.00,134.80,30.90,21.90
+January 2021,2021,January,1,Thousands,Cars,52.70,14.50,11.10,1.70,5.90,.30,6.20,.00,.00,.10,.00,92.40,12.30,6.20
+February 2021,2021,February,2,Thousands,Cars,32.40,8.90,5.60,.90,3.00,.10,3.50,.00,.00,.00,.00,54.40,6.70,3.50
+March 2021,2021,March,3,Thousands,Cars,159.90,46.00,35.00,6.90,16.30,.80,22.00,.00,.00,.20,.00,287.10,39.10,22.00
+April 2021,2021,April,4,Thousands,Cars,83.40,20.50,18.20,2.20,9.40,.20,9.20,.00,.00,.30,.00,143.30,18.80,9.20
+May 2021,2021,May,5,Thousands,Cars,88.20,22.20,21.50,2.80,9.50,.30,13.00,.00,.00,.30,.00,157.80,22.90,13.00
+June 2021,2021,June,6,Thousands,Cars,104.10,20.80,26.60,4.30,11.80,.40,19.80,.00,.00,.10,.00,188.00,32.00,19.80
+July 2021,2021,July,7,Thousands,Cars,67.50,12.90,22.10,1.90,9.70,.20,11.00,.00,.00,.20,.00,125.60,20.90,11.00
+August 2021,2021,August,8,Thousands,Cars,37.50,6.80,12.10,1.20,4.90,.20,7.40,.00,.00,.10,.00,70.10,12.40,7.40
+September 2021,2021,September,9,Thousands,Cars,113.60,16.70,36.80,4.10,13.50,.30,32.70,.00,.00,.50,.00,218.30,46.60,32.70
+October 2021,2021,October,10,Thousands,Cars,59.10,9.10,14.40,2.00,8.00,.40,16.10,.00,.00,.20,.00,109.40,24.50,16.10
+November 2021,2021,November,11,Thousands,Cars,60.90,8.70,15.40,1.90,10.30,.50,21.70,.00,.00,.10,.00,119.50,32.50,21.70
+December 2021,2021,December,12,Thousands,Cars,52.50,7.60,13.50,1.60,7.90,.40,27.70,.00,.00,.30,.00,111.40,36.00,27.70
+January 2022,2022,January,1,Thousands,Cars,62.80,8.90,20.80,1.90,8.50,.50,14.40,.00,.00,.30,.00,118.20,23.50,14.40
+February 2022,2022,February,2,Thousands,Cars,30.50,4.80,10.30,.90,4.50,.20,10.40,.00,.00,.10,.00,61.70,15.10,10.40
+March 2022,2022,March,3,Thousands,Cars,124.30,19.90,42.40,4.80,15.50,.50,39.30,.00,.00,.40,.00,247.20,55.30,39.30
+April 2022,2022,April,4,Thousands,Cars,66.50,11.00,22.90,1.80,6.20,.20,12.90,.00,.00,.20,.00,121.70,19.30,12.90
+May 2022,2022,May,5,Thousands,Cars,66.90,11.40,23.40,2.10,7.10,.20,15.40,.00,.00,.50,.00,127.10,22.80,15.40
+June 2022,2022,June,6,Thousands,Cars,72.90,12.70,25.60,2.40,7.50,.20,22.60,.00,.00,.30,.00,144.20,30.30,22.60
+July 2022,2022,July,7,Thousands,Cars,60.50,11.30,22.60,2.30,6.20,.10,12.30,.00,.00,.20,.00,115.60,18.70,12.30
+August 2022,2022,August,8,Thousands,Cars,38.40,6.20,12.80,1.10,3.80,.10,9.90,.00,.00,.20,.00,72.30,13.80,9.90
+September 2022,2022,September,9,Thousands,Cars,110.50,15.40,49.00,3.90,12.10,.20,38.10,.00,.00,.30,.00,229.50,50.40,38.10
+July 2014,2014,July,7,Thousands,Heavy goods vehicles,.00,3.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.00,.00,.00
+August 2014,2014,August,8,Thousands,Heavy goods vehicles,.00,2.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.30,.00,.00
+September 2014,2014,September,9,Thousands,Heavy goods vehicles,.00,5.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.20,.00,.00
+October 2014,2014,October,10,Thousands,Heavy goods vehicles,.00,8.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,8.10,.00,.00
+November 2014,2014,November,11,Thousands,Heavy goods vehicles,.00,2.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.30,.00,.00
+December 2014,2014,December,12,Thousands,Heavy goods vehicles,.00,2.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.40,.00,.00
+January 2015,2015,January,1,Thousands,Heavy goods vehicles,.00,2.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.20,.00,.00
+February 2015,2015,February,2,Thousands,Heavy goods vehicles,.00,1.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.70,.00,.00
+March 2015,2015,March,3,Thousands,Heavy goods vehicles,.00,5.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.60,.00,.00
+April 2015,2015,April,4,Thousands,Heavy goods vehicles,.00,3.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.80,.00,.00
+May 2015,2015,May,5,Thousands,Heavy goods vehicles,.00,3.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.50,.00,.00
+June 2015,2015,June,6,Thousands,Heavy goods vehicles,.00,4.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.20,.00,.00
+July 2015,2015,July,7,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.00,.00,.00
+August 2015,2015,August,8,Thousands,Heavy goods vehicles,.00,2.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.60,.00,.00
+September 2015,2015,September,9,Thousands,Heavy goods vehicles,.00,6.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,6.00,.00,.00
+October 2015,2015,October,10,Thousands,Heavy goods vehicles,.00,5.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.50,.00,.00
+November 2015,2015,November,11,Thousands,Heavy goods vehicles,.00,3.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.90,.00,.00
+December 2015,2015,December,12,Thousands,Heavy goods vehicles,.00,4.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.40,.00,.00
+January 2016,2016,January,1,Thousands,Heavy goods vehicles,.00,3.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.10,.00,.00
+February 2016,2016,February,2,Thousands,Heavy goods vehicles,.00,2.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.40,.00,.00
+March 2016,2016,March,3,Thousands,Heavy goods vehicles,.00,5.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.90,.00,.00
+April 2016,2016,April,4,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.00,.00,.00
+May 2016,2016,May,5,Thousands,Heavy goods vehicles,.00,3.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.90,.00,.00
+June 2016,2016,June,6,Thousands,Heavy goods vehicles,.00,4.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.40,.00,.00
+July 2016,2016,July,7,Thousands,Heavy goods vehicles,.00,3.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.80,.00,.00
+August 2016,2016,August,8,Thousands,Heavy goods vehicles,.00,3.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.10,.00,.00
+September 2016,2016,September,9,Thousands,Heavy goods vehicles,.00,5.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.40,.00,.00
+October 2016,2016,October,10,Thousands,Heavy goods vehicles,.00,4.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.80,.00,.00
+November 2016,2016,November,11,Thousands,Heavy goods vehicles,.00,5.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.10,.00,.00
+December 2016,2016,December,12,Thousands,Heavy goods vehicles,.00,4.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.30,.00,.00
+January 2017,2017,January,1,Thousands,Heavy goods vehicles,.00,3.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.40,.00,.00
+February 2017,2017,February,2,Thousands,Heavy goods vehicles,.00,2.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.50,.00,.00
+March 2017,2017,March,3,Thousands,Heavy goods vehicles,.00,5.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.60,.00,.00
+April 2017,2017,April,4,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.00,.00,.00
+May 2017,2017,May,5,Thousands,Heavy goods vehicles,.00,4.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.40,.00,.00
+June 2017,2017,June,6,Thousands,Heavy goods vehicles,.00,4.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.70,.00,.00
+July 2017,2017,July,7,Thousands,Heavy goods vehicles,.00,3.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.80,.00,.00
+August 2017,2017,August,8,Thousands,Heavy goods vehicles,.00,2.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.80,.00,.00
+September 2017,2017,September,9,Thousands,Heavy goods vehicles,.00,5.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.10,.00,.00
+October 2017,2017,October,10,Thousands,Heavy goods vehicles,.00,4.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.30,.00,.00
+November 2017,2017,November,11,Thousands,Heavy goods vehicles,.00,4.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.00,.00,.00
+December 2017,2017,December,12,Thousands,Heavy goods vehicles,.00,3.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.60,.00,.00
+January 2018,2018,January,1,Thousands,Heavy goods vehicles,.00,3.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.10,.00,.00
+February 2018,2018,February,2,Thousands,Heavy goods vehicles,.00,2.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.20,.00,.00
+March 2018,2018,March,3,Thousands,Heavy goods vehicles,.00,5.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.50,.00,.00
+April 2018,2018,April,4,Thousands,Heavy goods vehicles,.00,3.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.70,.00,.00
+May 2018,2018,May,5,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.00,.00,.00
+June 2018,2018,June,6,Thousands,Heavy goods vehicles,.00,4.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.20,.00,.00
+July 2018,2018,July,7,Thousands,Heavy goods vehicles,.00,3.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.60,.00,.00
+August 2018,2018,August,8,Thousands,Heavy goods vehicles,.00,2.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.60,.00,.00
+September 2018,2018,September,9,Thousands,Heavy goods vehicles,.00,4.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.60,.00,.00
+October 2018,2018,October,10,Thousands,Heavy goods vehicles,.00,4.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.60,.00,.00
+November 2018,2018,November,11,Thousands,Heavy goods vehicles,.00,5.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.10,.00,.00
+December 2018,2018,December,12,Thousands,Heavy goods vehicles,.00,3.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.60,.00,.00
+January 2019,2019,January,1,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.00,.00,.00
+February 2019,2019,February,2,Thousands,Heavy goods vehicles,.00,2.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.40,.00,.00
+March 2019,2019,March,3,Thousands,Heavy goods vehicles,.00,6.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,6.60,.00,.00
+April 2019,2019,April,4,Thousands,Heavy goods vehicles,.00,4.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.70,.00,.00
+May 2019,2019,May,5,Thousands,Heavy goods vehicles,.00,4.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.60,.00,.00
+June 2019,2019,June,6,Thousands,Heavy goods vehicles,.00,7.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,7.40,.00,.00
+July 2019,2019,July,7,Thousands,Heavy goods vehicles,.00,2.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.70,.00,.00
+August 2019,2019,August,8,Thousands,Heavy goods vehicles,.00,2.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.40,.00,.00
+September 2019,2019,September,9,Thousands,Heavy goods vehicles,.00,4.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.40,.00,.00
+October 2019,2019,October,10,Thousands,Heavy goods vehicles,.00,4.80,.00,.00,.00,.00,.00,.00,.00,.10,.00,4.80,.00,.00
+November 2019,2019,November,11,Thousands,Heavy goods vehicles,.00,4.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.50,.00,.00
+December 2019,2019,December,12,Thousands,Heavy goods vehicles,.00,3.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.50,.00,.00
+January 2020,2020,January,1,Thousands,Heavy goods vehicles,.00,3.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.20,.00,.00
+February 2020,2020,February,2,Thousands,Heavy goods vehicles,.00,2.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.10,.00,.00
+March 2020,2020,March,3,Thousands,Heavy goods vehicles,.00,4.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.50,.00,.00
+April 2020,2020,April,4,Thousands,Heavy goods vehicles,.00,1.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.00,.00,.00
+May 2020,2020,May,5,Thousands,Heavy goods vehicles,.00,1.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.20,.00,.00
+June 2020,2020,June,6,Thousands,Heavy goods vehicles,.00,2.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.20,.00,.00
+July 2020,2020,July,7,Thousands,Heavy goods vehicles,.00,3.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.10,.00,.00
+August 2020,2020,August,8,Thousands,Heavy goods vehicles,.00,2.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.40,.00,.00
+September 2020,2020,September,9,Thousands,Heavy goods vehicles,.00,4.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.50,.00,.00
+October 2020,2020,October,10,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.10,.00,.00
+November 2020,2020,November,11,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.00,.00,.00
+December 2020,2020,December,12,Thousands,Heavy goods vehicles,.00,3.40,.00,.00,.00,.00,.00,.00,.00,.20,.00,3.50,.00,.00
+January 2021,2021,January,1,Thousands,Heavy goods vehicles,.00,2.70,.00,.00,.00,.00,.00,.00,.00,.10,.00,2.80,.00,.00
+February 2021,2021,February,2,Thousands,Heavy goods vehicles,.00,2.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.40,.00,.00
+March 2021,2021,March,3,Thousands,Heavy goods vehicles,.00,5.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.50,.00,.00
+April 2021,2021,April,4,Thousands,Heavy goods vehicles,.00,3.50,.00,.00,.00,.00,.00,.00,.00,.10,.00,3.60,.00,.00
+May 2021,2021,May,5,Thousands,Heavy goods vehicles,.00,3.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.50,.00,.00
+June 2021,2021,June,6,Thousands,Heavy goods vehicles,.00,3.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.40,.00,.00
+July 2021,2021,July,7,Thousands,Heavy goods vehicles,.00,2.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.90,.00,.00
+August 2021,2021,August,8,Thousands,Heavy goods vehicles,.00,2.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,2.20,.00,.00
+September 2021,2021,September,9,Thousands,Heavy goods vehicles,.00,3.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.50,.00,.00
+October 2021,2021,October,10,Thousands,Heavy goods vehicles,.00,3.30,.00,.00,.00,.00,.00,.00,.00,.10,.00,3.40,.00,.00
+November 2021,2021,November,11,Thousands,Heavy goods vehicles,.00,4.00,.00,.00,.00,.00,.00,.00,.00,.10,.00,4.10,.00,.00
+December 2021,2021,December,12,Thousands,Heavy goods vehicles,.00,2.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.00,.00,.00
+January 2022,2022,January,1,Thousands,Heavy goods vehicles,.00,3.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.30,.00,.00
+February 2022,2022,February,2,Thousands,Heavy goods vehicles,.00,2.40,.00,.00,.00,.00,.00,.00,.00,.10,.00,2.50,.00,.00
+March 2022,2022,March,3,Thousands,Heavy goods vehicles,.00,4.60,.00,.00,.00,.00,.00,.00,.00,.10,.00,4.70,.00,.00
+April 2022,2022,April,4,Thousands,Heavy goods vehicles,.00,3.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,3.50,.00,.00
+May 2022,2022,May,5,Thousands,Heavy goods vehicles,.00,3.40,.00,.00,.00,.00,.00,.00,.00,.10,.00,3.50,.00,.00
+June 2022,2022,June,6,Thousands,Heavy goods vehicles,.00,3.40,.00,.00,.00,.00,.10,.00,.00,.10,.00,3.60,.10,.10
+July 2022,2022,July,7,Thousands,Heavy goods vehicles,.00,3.30,.00,.00,.00,.00,.00,.00,.00,.10,.00,3.40,.00,.00
+August 2022,2022,August,8,Thousands,Heavy goods vehicles,.00,2.90,.00,.00,.00,.00,.10,.00,.00,.10,.00,3.10,.10,.10
+September 2022,2022,September,9,Thousands,Heavy goods vehicles,.00,4.20,.00,.00,.00,.00,.20,.00,.00,.00,.00,4.40,.20,.20
+July 2014,2014,July,7,Thousands,Light goods vehicles,.50,25.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,25.80,.10,.10
+August 2014,2014,August,8,Thousands,Light goods vehicles,.40,12.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.10,.00,.00
+September 2014,2014,September,9,Thousands,Light goods vehicles,.40,50.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,50.60,.10,.10
+October 2014,2014,October,10,Thousands,Light goods vehicles,.40,26.80,.00,.00,.00,.00,.10,.00,.00,.00,.00,27.20,.10,.10
+November 2014,2014,November,11,Thousands,Light goods vehicles,.30,26.80,.00,.00,.00,.00,.10,.00,.00,.00,.00,27.10,.10,.10
+December 2014,2014,December,12,Thousands,Light goods vehicles,.30,26.30,.00,.00,.00,.00,.10,.00,.00,.00,.00,26.80,.10,.10
+January 2015,2015,January,1,Thousands,Light goods vehicles,.30,22.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,22.60,.10,.10
+February 2015,2015,February,2,Thousands,Light goods vehicles,.30,13.90,.00,.00,.00,.00,.10,.00,.00,.00,.00,14.20,.10,.10
+March 2015,2015,March,3,Thousands,Light goods vehicles,.40,62.70,.00,.00,.10,.00,.10,.00,.00,.00,.00,63.30,.20,.10
+April 2015,2015,April,4,Thousands,Light goods vehicles,.40,25.50,.00,.00,.00,.00,.10,.00,.00,.00,.00,25.90,.10,.10
+May 2015,2015,May,5,Thousands,Light goods vehicles,.40,28.70,.00,.00,.00,.00,.10,.00,.00,.00,.00,29.20,.10,.10
+June 2015,2015,June,6,Thousands,Light goods vehicles,.40,36.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,36.80,.10,.10
+July 2015,2015,July,7,Thousands,Light goods vehicles,.50,25.30,.00,.00,.00,.00,.10,.00,.00,.00,.00,25.90,.10,.10
+August 2015,2015,August,8,Thousands,Light goods vehicles,.50,14.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,14.60,.10,.10
+September 2015,2015,September,9,Thousands,Light goods vehicles,.80,58.70,.00,.00,.00,.00,.10,.00,.00,.00,.00,59.60,.10,.10
+October 2015,2015,October,10,Thousands,Light goods vehicles,.40,28.60,.00,.00,.00,.00,.10,.00,.00,.00,.00,29.00,.10,.10
+November 2015,2015,November,11,Thousands,Light goods vehicles,.30,29.50,.00,.00,.00,.00,.10,.00,.00,.00,.00,29.90,.10,.10
+December 2015,2015,December,12,Thousands,Light goods vehicles,.30,30.30,.00,.00,.00,.00,.10,.00,.00,.00,.00,30.70,.10,.10
+January 2016,2016,January,1,Thousands,Light goods vehicles,.30,21.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,21.60,.10,.10
+February 2016,2016,February,2,Thousands,Light goods vehicles,.40,14.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,14.40,.00,.00
+March 2016,2016,March,3,Thousands,Light goods vehicles,.40,65.40,.00,.00,.00,.00,.10,.00,.00,.00,.00,66.00,.20,.10
+April 2016,2016,April,4,Thousands,Light goods vehicles,.40,28.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,28.90,.10,.00
+May 2016,2016,May,5,Thousands,Light goods vehicles,.40,29.10,.00,.00,.00,.00,.10,.00,.00,.00,.00,29.60,.10,.10
+June 2016,2016,June,6,Thousands,Light goods vehicles,.50,37.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,37.70,.20,.20
+July 2016,2016,July,7,Thousands,Light goods vehicles,.40,25.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,25.70,.10,.10
+August 2016,2016,August,8,Thousands,Light goods vehicles,.50,15.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,16.30,.00,.00
+September 2016,2016,September,9,Thousands,Light goods vehicles,.40,59.90,.00,.00,.00,.00,.20,.00,.00,.00,.00,60.50,.20,.20
+October 2016,2016,October,10,Thousands,Light goods vehicles,.40,26.70,.00,.00,.00,.00,.10,.00,.00,.00,.00,27.20,.10,.10
+November 2016,2016,November,11,Thousands,Light goods vehicles,.40,30.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,30.40,.10,.10
+December 2016,2016,December,12,Thousands,Light goods vehicles,.30,27.40,.00,.00,.00,.00,.10,.00,.00,.00,.00,27.80,.10,.10
+January 2017,2017,January,1,Thousands,Light goods vehicles,.30,21.40,.00,.00,.00,.00,.10,.00,.00,.00,.00,21.80,.10,.10
+February 2017,2017,February,2,Thousands,Light goods vehicles,.30,13.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.80,.00,.00
+March 2017,2017,March,3,Thousands,Light goods vehicles,.50,64.70,.00,.00,.00,.00,.20,.00,.00,.00,.00,65.40,.20,.20
+April 2017,2017,April,4,Thousands,Light goods vehicles,.20,22.90,.00,.00,.00,.00,.10,.00,.00,.00,.00,23.20,.10,.10
+May 2017,2017,May,5,Thousands,Light goods vehicles,.50,27.40,.00,.00,.00,.00,.10,.00,.00,.00,.00,28.00,.10,.10
+June 2017,2017,June,6,Thousands,Light goods vehicles,.70,37.30,.00,.00,.00,.00,.10,.00,.00,.00,.00,38.10,.10,.10
+July 2017,2017,July,7,Thousands,Light goods vehicles,.60,24.70,.00,.00,.00,.00,.10,.00,.00,.00,.00,25.50,.10,.10
+August 2017,2017,August,8,Thousands,Light goods vehicles,.40,15.70,.00,.00,.00,.00,.10,.00,.00,.00,.00,16.10,.10,.10
+September 2017,2017,September,9,Thousands,Light goods vehicles,.90,57.60,.00,.00,.00,.00,.20,.00,.00,.00,.00,58.70,.20,.20
+October 2017,2017,October,10,Thousands,Light goods vehicles,.40,24.70,.00,.00,.00,.00,.10,.00,.00,.00,.00,25.20,.10,.10
+November 2017,2017,November,11,Thousands,Light goods vehicles,.50,26.60,.00,.00,.00,.00,.10,.00,.00,.00,.00,27.10,.10,.10
+December 2017,2017,December,12,Thousands,Light goods vehicles,.30,27.70,.00,.00,.00,.00,.20,.00,.00,.00,.00,28.20,.20,.20
+January 2018,2018,January,1,Thousands,Light goods vehicles,.40,20.30,.00,.00,.00,.00,.20,.00,.00,.00,.00,20.90,.20,.20
+February 2018,2018,February,2,Thousands,Light goods vehicles,.40,14.10,.00,.00,.00,.00,.10,.00,.00,.00,.00,14.60,.10,.10
+March 2018,2018,March,3,Thousands,Light goods vehicles,1.00,60.90,.00,.00,.00,.00,.20,.00,.00,.00,.00,62.10,.30,.20
+April 2018,2018,April,4,Thousands,Light goods vehicles,.50,23.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,23.90,.10,.00
+May 2018,2018,May,5,Thousands,Light goods vehicles,.70,28.10,.00,.00,.00,.00,.20,.00,.00,.00,.00,28.90,.20,.20
+June 2018,2018,June,6,Thousands,Light goods vehicles,.70,35.60,.00,.00,.00,.00,.10,.00,.00,.00,.00,36.50,.10,.10
+July 2018,2018,July,7,Thousands,Light goods vehicles,.90,23.60,.00,.00,.00,.00,.10,.00,.00,.00,.00,24.60,.10,.10
+August 2018,2018,August,8,Thousands,Light goods vehicles,.50,16.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,16.70,.10,.10
+September 2018,2018,September,9,Thousands,Light goods vehicles,.80,54.30,.00,.00,.00,.00,.20,.00,.00,.00,.00,55.30,.20,.20
+October 2018,2018,October,10,Thousands,Light goods vehicles,.50,28.60,.00,.00,.00,.00,.10,.00,.00,.00,.00,29.20,.10,.10
+November 2018,2018,November,11,Thousands,Light goods vehicles,.50,29.40,.00,.00,.00,.00,.20,.00,.00,.00,.00,30.10,.20,.20
+December 2018,2018,December,12,Thousands,Light goods vehicles,.50,25.50,.00,.00,.00,.00,.10,.00,.00,.00,.00,26.10,.10,.10
+January 2019,2019,January,1,Thousands,Light goods vehicles,.50,22.20,.00,.00,.00,.00,.20,.00,.00,.00,.00,23.00,.20,.20
+February 2019,2019,February,2,Thousands,Light goods vehicles,.50,14.20,.00,.00,.00,.00,.10,.00,.00,.00,.00,14.80,.10,.10
+March 2019,2019,March,3,Thousands,Light goods vehicles,.90,67.40,.00,.00,.00,.00,.40,.00,.00,.00,.00,68.80,.40,.40
+April 2019,2019,April,4,Thousands,Light goods vehicles,.50,25.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,25.70,.20,.20
+May 2019,2019,May,5,Thousands,Light goods vehicles,.90,29.60,.00,.00,.00,.00,.20,.00,.00,.00,.00,30.70,.30,.20
+June 2019,2019,June,6,Thousands,Light goods vehicles,.80,39.20,.00,.00,.00,.00,.30,.00,.00,.00,.00,40.30,.30,.30
+July 2019,2019,July,7,Thousands,Light goods vehicles,.60,25.70,.00,.00,.00,.00,.30,.00,.00,.00,.00,26.60,.30,.30
+August 2019,2019,August,8,Thousands,Light goods vehicles,.70,23.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,23.90,.30,.20
+September 2019,2019,September,9,Thousands,Light goods vehicles,.60,41.40,.00,.00,.00,.00,.30,.00,.00,.00,.00,42.30,.30,.30
+October 2019,2019,October,10,Thousands,Light goods vehicles,.50,25.40,.00,.00,.00,.00,.30,.00,.00,.00,.00,26.20,.30,.30
+November 2019,2019,November,11,Thousands,Light goods vehicles,.40,25.80,.00,.00,.00,.00,.40,.00,.00,.00,.00,26.70,.50,.40
+December 2019,2019,December,12,Thousands,Light goods vehicles,.60,25.30,.00,.00,.00,.00,.50,.00,.00,.00,.00,26.50,.50,.50
+January 2020,2020,January,1,Thousands,Light goods vehicles,.90,22.70,.00,.00,.00,.00,.50,.00,.00,.00,.00,24.20,.50,.50
+February 2020,2020,February,2,Thousands,Light goods vehicles,.40,13.70,.00,.00,.00,.00,.40,.00,.00,.00,.00,14.50,.40,.40
+March 2020,2020,March,3,Thousands,Light goods vehicles,.50,30.80,.00,.00,.00,.00,.40,.00,.00,.00,.00,31.80,.50,.40
+April 2020,2020,April,4,Thousands,Light goods vehicles,.10,2.80,.00,.00,.00,.00,.20,.00,.00,.00,.00,3.10,.20,.20
+May 2020,2020,May,5,Thousands,Light goods vehicles,.10,7.40,.00,.00,.00,.00,.10,.00,.00,.00,.00,7.60,.10,.10
+June 2020,2020,June,6,Thousands,Light goods vehicles,.40,30.20,.00,.00,.10,.00,.30,.00,.00,.00,.00,31.00,.40,.30
+July 2020,2020,July,7,Thousands,Light goods vehicles,.50,28.60,.00,.00,.00,.00,.50,.00,.00,.00,.00,29.60,.60,.50
+August 2020,2020,August,8,Thousands,Light goods vehicles,.50,20.10,.00,.00,.00,.00,.20,.00,.00,.00,.00,20.80,.20,.20
+September 2020,2020,September,9,Thousands,Light goods vehicles,.80,52.40,.00,.00,.10,.00,.90,.00,.00,.00,.00,54.20,1.00,.90
+October 2020,2020,October,10,Thousands,Light goods vehicles,.40,27.30,.10,.00,.00,.00,.80,.00,.00,.00,.00,28.60,.80,.80
+November 2020,2020,November,11,Thousands,Light goods vehicles,.60,27.30,.00,.00,.00,.00,.70,.00,.00,.00,.00,28.60,.80,.70
+December 2020,2020,December,12,Thousands,Light goods vehicles,.50,26.00,.00,.00,.00,.00,.70,.10,.00,.00,.00,27.30,.80,.70
+January 2021,2021,January,1,Thousands,Light goods vehicles,.40,22.90,.00,.00,.00,.00,.60,.10,.00,.00,.00,24.10,.70,.60
+February 2021,2021,February,2,Thousands,Light goods vehicles,.50,16.90,.00,.00,.00,.00,.40,.10,.00,.00,.00,17.90,.50,.40
+March 2021,2021,March,3,Thousands,Light goods vehicles,.70,54.50,.00,.10,.10,.00,1.70,.10,.00,.00,.00,57.10,1.80,1.70
+April 2021,2021,April,4,Thousands,Light goods vehicles,.50,30.30,.00,.10,.00,.00,.60,.10,.00,.00,.00,31.60,.70,.60
+May 2021,2021,May,5,Thousands,Light goods vehicles,.60,29.10,.00,.10,.00,.00,.60,.10,.00,.00,.00,30.50,.70,.60
+June 2021,2021,June,6,Thousands,Light goods vehicles,.60,32.50,.00,.10,.00,.00,1.40,.10,.00,.00,.00,34.70,1.50,1.40
+July 2021,2021,July,7,Thousands,Light goods vehicles,.60,23.20,.00,.00,.00,.00,.70,.10,.00,.00,.00,24.60,.70,.70
+August 2021,2021,August,8,Thousands,Light goods vehicles,.50,19.60,.00,.10,.00,.00,.90,.00,.00,.00,.00,21.10,.90,.90
+September 2021,2021,September,9,Thousands,Light goods vehicles,.70,30.60,.00,.10,.00,.00,.90,.10,.00,.00,.00,32.50,1.10,.90
+October 2021,2021,October,10,Thousands,Light goods vehicles,.50,26.30,.00,.10,.00,.00,1.20,.10,.00,.00,.00,28.20,1.20,1.20
+November 2021,2021,November,11,Thousands,Light goods vehicles,.60,29.80,.00,.10,.00,.00,1.70,.10,.00,.00,.00,32.30,1.80,1.70
+December 2021,2021,December,12,Thousands,Light goods vehicles,.50,26.20,.00,.10,.00,.00,2.50,.20,.00,.00,.00,29.50,2.70,2.50
+January 2022,2022,January,1,Thousands,Light goods vehicles,.60,16.80,.00,.00,.00,.00,.70,.00,.00,.00,.00,18.10,.70,.70
+February 2022,2022,February,2,Thousands,Light goods vehicles,.40,14.40,.00,.10,.00,.00,1.80,.00,.00,.00,.00,16.70,1.80,1.80
+March 2022,2022,March,3,Thousands,Light goods vehicles,1.10,39.10,.00,.00,.00,.00,2.00,.10,.00,.00,.00,42.20,2.00,2.00
+April 2022,2022,April,4,Thousands,Light goods vehicles,.70,20.70,.00,.00,.00,.00,1.00,.00,.00,.00,.00,22.50,1.00,1.00
+May 2022,2022,May,5,Thousands,Light goods vehicles,.80,21.10,.00,.00,.00,.00,.90,.00,.00,.00,.00,22.80,1.00,.90
+June 2022,2022,June,6,Thousands,Light goods vehicles,.70,24.50,.00,.10,.00,.00,2.10,.10,.00,.00,.00,27.40,2.20,2.10
+July 2022,2022,July,7,Thousands,Light goods vehicles,.70,17.90,.00,.10,.00,.00,.90,.00,.00,.00,.00,19.60,.90,.90
+August 2022,2022,August,8,Thousands,Light goods vehicles,.40,14.20,.00,.00,.00,.00,1.10,.10,.00,.00,.00,15.90,1.20,1.10
+September 2022,2022,September,9,Thousands,Light goods vehicles,.70,33.40,.10,.00,.00,.00,1.60,.00,.00,.00,.00,35.80,1.60,1.60
+July 2014,2014,July,7,Thousands,Motorcycles,10.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,10.80,.00,.00
+August 2014,2014,August,8,Thousands,Motorcycles,7.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,7.80,.00,.00
+September 2014,2014,September,9,Thousands,Motorcycles,13.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.40,.00,.00
+October 2014,2014,October,10,Thousands,Motorcycles,8.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,8.20,.00,.00
+November 2014,2014,November,11,Thousands,Motorcycles,6.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,6.50,.00,.00
+December 2014,2014,December,12,Thousands,Motorcycles,5.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.30,.00,.00
+January 2015,2015,January,1,Thousands,Motorcycles,5.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.80,.00,.00
+February 2015,2015,February,2,Thousands,Motorcycles,4.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.80,.00,.00
+March 2015,2015,March,3,Thousands,Motorcycles,17.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,17.30,.00,.00
+April 2015,2015,April,4,Thousands,Motorcycles,11.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,11.80,.00,.00
+May 2015,2015,May,5,Thousands,Motorcycles,12.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,12.40,.00,.00
+June 2015,2015,June,6,Thousands,Motorcycles,14.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,14.00,.00,.00
+July 2015,2015,July,7,Thousands,Motorcycles,12.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,12.20,.00,.00
+August 2015,2015,August,8,Thousands,Motorcycles,8.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,8.90,.00,.00
+September 2015,2015,September,9,Thousands,Motorcycles,14.40,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,14.50,.10,.10
+October 2015,2015,October,10,Thousands,Motorcycles,9.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,9.50,.00,.00
+November 2015,2015,November,11,Thousands,Motorcycles,7.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,7.80,.00,.00
+December 2015,2015,December,12,Thousands,Motorcycles,5.90,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,6.00,.00,.00
+January 2016,2016,January,1,Thousands,Motorcycles,6.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,6.70,.00,.00
+February 2016,2016,February,2,Thousands,Motorcycles,5.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.90,.00,.00
+March 2016,2016,March,3,Thousands,Motorcycles,17.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,17.30,.10,.10
+April 2016,2016,April,4,Thousands,Motorcycles,13.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.50,.00,.00
+May 2016,2016,May,5,Thousands,Motorcycles,13.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.20,.00,.00
+June 2016,2016,June,6,Thousands,Motorcycles,15.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,15.20,.00,.00
+July 2016,2016,July,7,Thousands,Motorcycles,12.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,12.20,.00,.00
+August 2016,2016,August,8,Thousands,Motorcycles,9.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,9.40,.00,.00
+September 2016,2016,September,9,Thousands,Motorcycles,17.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,17.00,.00,.00
+October 2016,2016,October,10,Thousands,Motorcycles,9.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,9.40,.00,.00
+November 2016,2016,November,11,Thousands,Motorcycles,8.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,8.50,.00,.00
+December 2016,2016,December,12,Thousands,Motorcycles,11.80,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,11.90,.10,.10
+January 2017,2017,January,1,Thousands,Motorcycles,5.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,5.50,.00,.00
+February 2017,2017,February,2,Thousands,Motorcycles,4.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.70,.00,.00
+March 2017,2017,March,3,Thousands,Motorcycles,15.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,15.40,.00,.00
+April 2017,2017,April,4,Thousands,Motorcycles,11.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,11.00,.00,.00
+May 2017,2017,May,5,Thousands,Motorcycles,11.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,11.80,.00,.00
+June 2017,2017,June,6,Thousands,Motorcycles,13.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.20,.00,.00
+July 2017,2017,July,7,Thousands,Motorcycles,10.70,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,10.70,.10,.10
+August 2017,2017,August,8,Thousands,Motorcycles,7.70,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,7.80,.00,.00
+September 2017,2017,September,9,Thousands,Motorcycles,13.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.10,.00,.00
+October 2017,2017,October,10,Thousands,Motorcycles,8.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,8.20,.00,.00
+November 2017,2017,November,11,Thousands,Motorcycles,7.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,7.10,.00,.00
+December 2017,2017,December,12,Thousands,Motorcycles,6.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,6.90,.00,.00
+January 2018,2018,January,1,Thousands,Motorcycles,6.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,6.00,.00,.00
+February 2018,2018,February,2,Thousands,Motorcycles,4.80,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,4.80,.00,.00
+March 2018,2018,March,3,Thousands,Motorcycles,15.90,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,16.00,.10,.10
+April 2018,2018,April,4,Thousands,Motorcycles,10.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,10.20,.00,.00
+May 2018,2018,May,5,Thousands,Motorcycles,11.80,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,11.90,.10,.10
+June 2018,2018,June,6,Thousands,Motorcycles,14.10,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,14.20,.10,.10
+July 2018,2018,July,7,Thousands,Motorcycles,10.60,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,10.60,.10,.10
+August 2018,2018,August,8,Thousands,Motorcycles,8.60,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,8.70,.10,.10
+September 2018,2018,September,9,Thousands,Motorcycles,13.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,13.60,.00,.00
+October 2018,2018,October,10,Thousands,Motorcycles,8.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,8.30,.10,.10
+November 2018,2018,November,11,Thousands,Motorcycles,7.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,7.30,.10,.10
+December 2018,2018,December,12,Thousands,Motorcycles,6.00,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,6.10,.10,.10
+January 2019,2019,January,1,Thousands,Motorcycles,7.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,7.00,.00,.00
+February 2019,2019,February,2,Thousands,Motorcycles,5.50,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,5.50,.10,.10
+March 2019,2019,March,3,Thousands,Motorcycles,17.70,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,17.90,.20,.20
+April 2019,2019,April,4,Thousands,Motorcycles,10.70,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,11.00,.20,.20
+May 2019,2019,May,5,Thousands,Motorcycles,12.00,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,12.10,.10,.10
+June 2019,2019,June,6,Thousands,Motorcycles,12.80,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,13.00,.20,.20
+July 2019,2019,July,7,Thousands,Motorcycles,11.00,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,11.20,.20,.20
+August 2019,2019,August,8,Thousands,Motorcycles,7.90,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,8.00,.10,.10
+September 2019,2019,September,9,Thousands,Motorcycles,13.70,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,13.90,.20,.20
+October 2019,2019,October,10,Thousands,Motorcycles,7.90,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,8.10,.20,.20
+November 2019,2019,November,11,Thousands,Motorcycles,6.90,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,7.10,.20,.20
+December 2019,2019,December,12,Thousands,Motorcycles,5.70,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,5.80,.10,.10
+January 2020,2020,January,1,Thousands,Motorcycles,7.00,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,7.10,.10,.10
+February 2020,2020,February,2,Thousands,Motorcycles,5.60,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,5.70,.10,.10
+March 2020,2020,March,3,Thousands,Motorcycles,13.60,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,13.80,.20,.20
+April 2020,2020,April,4,Thousands,Motorcycles,1.70,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,1.70,.10,.10
+May 2020,2020,May,5,Thousands,Motorcycles,5.40,.00,.00,.00,.00,.00,.10,.00,.00,.00,.00,5.50,.10,.10
+June 2020,2020,June,6,Thousands,Motorcycles,13.40,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,13.70,.20,.20
+July 2020,2020,July,7,Thousands,Motorcycles,14.80,.00,.00,.00,.00,.00,.30,.00,.00,.00,.00,15.10,.30,.30
+August 2020,2020,August,8,Thousands,Motorcycles,10.40,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,10.60,.20,.20
+September 2020,2020,September,9,Thousands,Motorcycles,15.50,.00,.00,.00,.00,.00,.30,.00,.00,.00,.00,15.80,.30,.30
+October 2020,2020,October,10,Thousands,Motorcycles,9.50,.00,.00,.00,.00,.00,.30,.00,.00,.00,.00,9.90,.30,.30
+November 2020,2020,November,11,Thousands,Motorcycles,7.00,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,7.20,.20,.20
+December 2020,2020,December,12,Thousands,Motorcycles,8.70,.00,.00,.00,.00,.00,.30,.00,.00,.00,.00,9.10,.30,.30
+January 2021,2021,January,1,Thousands,Motorcycles,4.60,.00,.00,.00,.00,.00,.30,.00,.00,.00,.00,4.80,.30,.30
+February 2021,2021,February,2,Thousands,Motorcycles,4.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.00,4.50,.20,.20
+March 2021,2021,March,3,Thousands,Motorcycles,12.90,.00,.00,.00,.00,.00,.50,.00,.00,.00,.00,13.40,.50,.50
+April 2021,2021,April,4,Thousands,Motorcycles,11.30,.00,.00,.00,.00,.00,.40,.00,.00,.00,.00,11.80,.40,.40
+May 2021,2021,May,5,Thousands,Motorcycles,13.70,.00,.00,.00,.00,.00,.50,.00,.00,.00,.00,14.20,.50,.50
+June 2021,2021,June,6,Thousands,Motorcycles,14.90,.00,.00,.00,.00,.00,.60,.00,.00,.00,.00,15.50,.60,.60
+July 2021,2021,July,7,Thousands,Motorcycles,12.60,.00,.00,.00,.00,.00,.70,.00,.00,.00,.00,13.30,.70,.70
+August 2021,2021,August,8,Thousands,Motorcycles,9.10,.00,.00,.00,.00,.00,.50,.00,.00,.00,.00,9.60,.50,.50
+September 2021,2021,September,9,Thousands,Motorcycles,13.90,.00,.00,.00,.00,.00,.60,.00,.00,.00,.00,14.50,.60,.60
+October 2021,2021,October,10,Thousands,Motorcycles,9.00,.00,.00,.00,.00,.00,.60,.00,.00,.00,.00,9.60,.60,.60
+November 2021,2021,November,11,Thousands,Motorcycles,8.00,.00,.00,.00,.00,.00,.50,.00,.00,.00,.00,8.50,.50,.50
+December 2021,2021,December,12,Thousands,Motorcycles,6.40,.00,.00,.00,.00,.00,.40,.00,.00,.00,.00,6.80,.40,.40
+January 2022,2022,January,1,Thousands,Motorcycles,6.50,.00,.00,.00,.00,.00,.50,.00,.00,.00,.00,6.90,.50,.50
+February 2022,2022,February,2,Thousands,Motorcycles,5.60,.00,.00,.00,.00,.00,.40,.00,.00,.00,.00,6.10,.40,.40
+March 2022,2022,March,3,Thousands,Motorcycles,16.60,.00,.00,.00,.00,.00,.90,.00,.00,.00,.00,17.50,.90,.90
+April 2022,2022,April,4,Thousands,Motorcycles,11.60,.00,.00,.00,.00,.00,.60,.00,.00,.00,.00,12.10,.60,.60
+May 2022,2022,May,5,Thousands,Motorcycles,12.20,.00,.00,.00,.00,.00,.60,.00,.00,.00,.00,12.80,.60,.60
+June 2022,2022,June,6,Thousands,Motorcycles,12.80,.00,.00,.00,.00,.00,.50,.00,.00,.00,.00,13.40,.50,.50
+July 2022,2022,July,7,Thousands,Motorcycles,11.40,.00,.00,.00,.00,.00,.60,.00,.00,.00,.00,12.00,.60,.60
+August 2022,2022,August,8,Thousands,Motorcycles,9.00,.00,.00,.00,.00,.00,.60,.00,.00,.00,.00,9.60,.60,.60
+September 2022,2022,September,9,Thousands,Motorcycles,12.30,.00,.00,.00,.00,.00,.50,.00,.00,.00,.00,12.90,.50,.50
+July 2014,2014,July,7,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+August 2014,2014,August,8,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+September 2014,2014,September,9,Thousands,Other vehicles,.10,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+October 2014,2014,October,10,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+November 2014,2014,November,11,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+December 2014,2014,December,12,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+January 2015,2015,January,1,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+February 2015,2015,February,2,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+March 2015,2015,March,3,Thousands,Other vehicles,.10,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.80,.00,.00
+April 2015,2015,April,4,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+May 2015,2015,May,5,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+June 2015,2015,June,6,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+July 2015,2015,July,7,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+August 2015,2015,August,8,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+September 2015,2015,September,9,Thousands,Other vehicles,.10,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+October 2015,2015,October,10,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+November 2015,2015,November,11,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+December 2015,2015,December,12,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+January 2016,2016,January,1,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+February 2016,2016,February,2,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+March 2016,2016,March,3,Thousands,Other vehicles,.20,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+April 2016,2016,April,4,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+May 2016,2016,May,5,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+June 2016,2016,June,6,Thousands,Other vehicles,.10,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+July 2016,2016,July,7,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+August 2016,2016,August,8,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+September 2016,2016,September,9,Thousands,Other vehicles,.10,.60,.00,.00,.00,.00,.00,.00,.00,.00,.00,.70,.00,.00
+October 2016,2016,October,10,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+November 2016,2016,November,11,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+December 2016,2016,December,12,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+January 2017,2017,January,1,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+February 2017,2017,February,2,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+March 2017,2017,March,3,Thousands,Other vehicles,.10,1.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,1.10,.00,.00
+April 2017,2017,April,4,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+May 2017,2017,May,5,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+June 2017,2017,June,6,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+July 2017,2017,July,7,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+August 2017,2017,August,8,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+September 2017,2017,September,9,Thousands,Other vehicles,.10,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+October 2017,2017,October,10,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.00,.00,.00,.00,.40,.00,.00
+November 2017,2017,November,11,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.00,.00,.00,.00,.50,.00,.00
+December 2017,2017,December,12,Thousands,Other vehicles,.10,.50,.00,.00,.00,.00,.00,.00,.00,.00,.00,.60,.00,.00
+January 2018,2018,January,1,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+February 2018,2018,February,2,Thousands,Other vehicles,.00,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+March 2018,2018,March,3,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.10,.00,.00,.00,.60,.10,.00
+April 2018,2018,April,4,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+May 2018,2018,May,5,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.10,.00,.00,.00,.50,.10,.00
+June 2018,2018,June,6,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+July 2018,2018,July,7,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+August 2018,2018,August,8,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+September 2018,2018,September,9,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.10,.00,.00,.00,.50,.10,.00
+October 2018,2018,October,10,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.50,.20,.00
+November 2018,2018,November,11,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.50,.20,.00
+December 2018,2018,December,12,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.40,.20,.00
+January 2019,2019,January,1,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+February 2019,2019,February,2,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+March 2019,2019,March,3,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.20,.00,.00,.00,.80,.20,.00
+April 2019,2019,April,4,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.40,.20,.00
+May 2019,2019,May,5,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.20,.00,.00,.00,.60,.20,.00
+June 2019,2019,June,6,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.20,.00,.00,.00,.50,.20,.00
+July 2019,2019,July,7,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.50,.20,.00
+August 2019,2019,August,8,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+September 2019,2019,September,9,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.30,.00,.00,.00,.60,.30,.00
+October 2019,2019,October,10,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.60,.20,.00
+November 2019,2019,November,11,Thousands,Other vehicles,.10,.40,.00,.00,.00,.00,.00,.30,.00,.00,.00,.70,.30,.00
+December 2019,2019,December,12,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.20,.00
+January 2020,2020,January,1,Thousands,Other vehicles,.10,.10,.00,.00,.00,.00,.00,.20,.00,.00,.00,.40,.20,.00
+February 2020,2020,February,2,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+March 2020,2020,March,3,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.20,.00,.00,.00,.60,.20,.00
+April 2020,2020,April,4,Thousands,Other vehicles,.00,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+May 2020,2020,May,5,Thousands,Other vehicles,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.00,.10,.00,.00
+June 2020,2020,June,6,Thousands,Other vehicles,.10,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+July 2020,2020,July,7,Thousands,Other vehicles,.10,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.10,.00
+August 2020,2020,August,8,Thousands,Other vehicles,.10,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+September 2020,2020,September,9,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.50,.20,.00
+October 2020,2020,October,10,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+November 2020,2020,November,11,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+December 2020,2020,December,12,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+January 2021,2021,January,1,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+February 2021,2021,February,2,Thousands,Other vehicles,.10,.10,.00,.00,.00,.00,.00,.00,.00,.00,.00,.20,.00,.00
+March 2021,2021,March,3,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.50,.10,.00
+April 2021,2021,April,4,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.00,.00,.00,.00,.30,.00,.00
+May 2021,2021,May,5,Thousands,Other vehicles,.10,.10,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+June 2021,2021,June,6,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+July 2021,2021,July,7,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.10,.00,.00,.00,.50,.10,.00
+August 2021,2021,August,8,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+September 2021,2021,September,9,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.60,.20,.00
+October 2021,2021,October,10,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.20,.00,.00,.00,.50,.20,.00
+November 2021,2021,November,11,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.20,.00,.00,.00,.60,.20,.00
+December 2021,2021,December,12,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.10,.00,.00,.00,.50,.10,.00
+January 2022,2022,January,1,Thousands,Other vehicles,.00,.10,.00,.00,.00,.00,.00,.10,.00,.00,.00,.20,.10,.00
+February 2022,2022,February,2,Thousands,Other vehicles,.00,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.30,.10,.00
+March 2022,2022,March,3,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.30,.00,.00,.00,.70,.30,.00
+April 2022,2022,April,4,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.50,.20,.00
+May 2022,2022,May,5,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+June 2022,2022,June,6,Thousands,Other vehicles,.10,.30,.00,.00,.00,.00,.00,.10,.00,.00,.00,.50,.10,.00
+July 2022,2022,July,7,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.20,.00,.00,.00,.40,.20,.00
+August 2022,2022,August,8,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.10,.00,.00,.00,.40,.10,.00
+September 2022,2022,September,9,Thousands,Other vehicles,.10,.20,.00,.00,.00,.00,.00,.30,.00,.00,.00,.60,.30,.00
