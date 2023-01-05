@@ -24,8 +24,6 @@ Consistent data points published for all seasons are below, and these will form 
 * Average wind speed (MPH)
 * Wind direction
 
-The time of day for each summit is recorded for some seasons it is not included for all. The Fell top assessors generally begin their walk by mid morning and reach the summit between 12:00 and 14:00.
-
 ## Queries
 Using SQL I am hoping to find the answers to the following questions:
 * When does a typical season start and end?
