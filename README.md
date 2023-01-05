@@ -3,6 +3,8 @@
 ## About
 Hi, I'm David! I have a background in ... and I am working towards ...
 
+## Tools
+
 ## Projects table of contents
 ### SQL projects
 * Data cleaning
@@ -12,3 +14,8 @@ Hi, I'm David! I have a background in ... and I am working towards ...
     * [Weatherline Lake district](SQL%20Data%20exploration%20-%20Weatherline/README.md)
     
 ### Power BI projects
+
+### Python projects
+
+## Connect with me
+
