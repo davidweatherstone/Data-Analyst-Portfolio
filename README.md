@@ -1,5 +1,3 @@
-Data Analysis Portfolio
-
 ## Overview
 Hi, my name is David Weatherstone. As a data analyst in training, I am **passionate** about using my analytical skills and technical knowledge to make an impact in a new role. My studies in **SQL**, **Power BI**, **Tableau**, and **Python**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
@@ -20,7 +18,6 @@ Through my professional experience, I have gained a strong foundation in **data 
     
 ### Power BI projects
 
-### Python projects
 
 ## Skills
 📊 Microsoft Excel • 🔍 Power Query • 💾 SQL • 🔮 Power BI
