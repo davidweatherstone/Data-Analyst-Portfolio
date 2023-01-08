@@ -1,7 +1,7 @@
 # Power Bi - Procurement dashboard
 
 ## Sample data - [Spend data.xlsx](Spend%20data.xlsx)
-* Created fictitious company names using an online generator
+* Created fictitious company names using an online generator - [randommer.io](https://randommer.io/random-business-names)
 * Created unique vendors, employees, department budgets, transactions (contracted and non-contracted).
 * Used RANDNUMBER() function within Excel to create transaction amounts and transaction dates (e.g. RANDNUMBER(DATE(2022,1,1),DATE(2022,12,31))
 
