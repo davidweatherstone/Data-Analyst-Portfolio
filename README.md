@@ -10,6 +10,7 @@ Through my professional experience, I have gained a strong foundation in **data 
 - **Affordability calculator**
     - A personal project to calculate how much myself and my partner are comfortable with borrowing for a house purchase and how much we'd typically have left over each month
     - [Macro Enabled .xlsm file](EXCEL/Affordability%20calculator.xlsm)
+
 ### SQL
 - **Data cleaning**, Vehicle licensing statistics
     - A project to clean and streamline vehicle licensing data from GOV.UK.
