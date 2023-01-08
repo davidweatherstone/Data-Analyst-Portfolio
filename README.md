@@ -22,7 +22,10 @@ Through my professional experience, I have gained a strong foundation in **data 
     - [Documentation](SQL%20Data%20exploration%20-%20Weatherline/)
     
 ### Power BI
-
+- **Procurement dashboard**, fictitious company
+    - A dashboard to review at a high level, the spend of an organization over a 12 month period
+    - [.pdf view of dashboard](https://drive.google.com/file/d/1wqWB2MlV0036dCzYLsSd91TxyCoXMSWj/view?usp=sharing)
+    - [Documentation](Power%20BI%20-%20Procurement%20dashboard/README.md)
 
 ## Skills
 📊 Microsoft Excel • 🔍 Power Query • 💾 SQL • 🔮 Power BI
