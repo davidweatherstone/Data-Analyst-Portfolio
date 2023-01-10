@@ -6,7 +6,7 @@ Through my professional experience, I have gained a strong foundation in **data 
 ## Projects
 
 ### Excel
-* **Affordability calculator** A personal project to calculate a comfortable borrowing amount for a house purchase and typical monthly expenses. [[.xlsm file]](EXCEL/Affordability%20calculator.xlsm)
+* **Affordability calculator**, a personal project to calculate a comfortable borrowing amount for a house purchase and typical monthly expenses. [[.xlsm file]](EXCEL/Affordability%20calculator.xlsm)
 
 ### SQL
 * **Data cleaning**, Vehicle licensing statistics: A project to clean and streamline data from GOV.UK. [[Documentation]](SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
