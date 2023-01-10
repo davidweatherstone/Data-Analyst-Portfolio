@@ -1,7 +1,10 @@
 ## Overview
 Welcome to my data analysis portfolio, my name is David Weatherstone. As a data analyst in training, I am **passionate** about using my analytical skills and technical knowledge to make an impact in a new role. My studies in **Excel**, **Power Query**, **SQL**, **Power BI**, **Tableau**, and **Python**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
-Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. I am excited to join a **forward-thinking organization** and make a meaningful contribution to its success.
+Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. I am excited to join a **forward-thinking organization** and make a meaningful contribution to its success. You can find my CV [here](https://drive.google.com/file/d/1FRTk8Pzkjvy1S52SktgnODWZVsr5KDFK/view?usp=sharing).
+
+## Skills
+📊 Microsoft Excel • 🔍 Power Query • 💾 SQL • 🔮 Power BI
 
 ## Projects
 
@@ -16,11 +19,8 @@ Through my professional experience, I have gained a strong foundation in **data 
 ### Power BI
 * **Procurement dashboard**, fictitious company, a dashboard to review an organizations spend over 12 months. [[Documentation]](Power%20BI%20-%20Procurement%20dashboard/README.md) [[.pdf view of dashboard]](https://drive.google.com/file/d/1wqWB2MlV0036dCzYLsSd91TxyCoXMSWj/view?usp=sharing)
 
-## Skills
-📊 Microsoft Excel • 🔍 Power Query • 💾 SQL • 🔮 Power BI
-
 ## Certifications
-* Google Data Analytics Professional Certificate
+* [Google Data Analytics Professional Certificate](https://drive.google.com/file/d/1NXKDZShsj2_qZCxtoar1PiqODv0VTkvc/view?usp=sharing)
 * CIPS Level 3 Advanced Certificate in Procurement and Supply Operations
 
 ## Education
@@ -28,4 +28,5 @@ Through my professional experience, I have gained a strong foundation in **data 
     * BSc Hons, **International Business (Economics)**
 
 ## Connect with me
-
+- LinkedIn: [David Weatherstone](https://www.linkedin.com/in/davidjweatherstone)
+- Email: djweatherstone@googlemail.com
