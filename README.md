@@ -3,7 +3,6 @@ Welcome to my data analayss portfolio, my name is David Weatherstone. As a data 
 
 Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. I am excited to join a **forward-thinking organization** and make a meaningful contribution to its success.
 
-
 ## Projects
 
 ### Excel
