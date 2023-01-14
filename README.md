@@ -8,7 +8,7 @@ Through my professional experience, I have gained a strong foundation in **data 
 
 🔍 **PowerQuery**: data sourcing and transformation, merging and appending tables, creating custom columns and calculations
 
-💾 **SQL**: querying, joins, aggregations, indexing, data normalisation, views, stored procedures, common table expressions
+💾 **SQL**: querying, joins, aggregations, data normalisation, views, stored procedures, common table expressions
 
 🔮 **Power BI**: DAX, data modelling, creating and formatting visualisations, data exploration and discovery
 
