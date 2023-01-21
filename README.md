@@ -1,7 +1,7 @@
 ## Overview
 Welcome to my data analysis portfolio, my name is David Weatherstone. As a data analyst in training, I am **passionate** about using my analytical skills and technical knowledge to make an impact in a new role. My studies in **Excel**, **Power Query**, **SQL**, **Power BI**, **Tableau**, and **Python**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
-Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. I am excited to join a **forward-thinking organisation** and make a meaningful contribution to its success. You can find my CV <a href="https://drive.google.com/file/d/1BQ4EbYOefU4AjZByqOX2VHckjgQAON0S/view" target="_blank">here</a>.
+Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. You can find my CV <a href="https://drive.google.com/file/d/1BQ4EbYOefU4AjZByqOX2VHckjgQAON0S/view" target="_blank">here</a>.
 
 ## Skills
 📊 **Microsoft Excel**: v/xlookups, pivot tables, conditional formatting, data validation, charts and graphs
