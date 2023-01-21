@@ -15,15 +15,15 @@ Through my professional experience, I have gained a strong foundation in **data 
 ## Projects
 
 ### Excel
-* **Affordability calculator**, a personal project to calculate a comfortable borrowing amount for a house purchase and typical monthly expenses. [[.xlsm file]](EXCEL/Affordability%20calculator.xlsm)
+* **Affordability calculator**, a personal project to calculate a comfortable borrowing amount for a house purchase and typical monthly expenses. [[.xlsm file]](Projects/EXCEL/Affordability%20calculator.xlsm)
 
 ### SQL
-* **Data cleaning**, Vehicle licensing statistics: A project to clean and streamline data from GOV.UK. [[Documentation]](SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
+* **Data cleaning**, Vehicle licensing statistics: A project to clean and streamline data from GOV.UK. [[Documentation]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
 
-* **Data exploration**, Weatherline Lake district: Analysis of historical weather patterns in the Lake District. [[Documentation]](SQL%20Data%20exploration%20-%20Weatherline/) [[Code]](SQL%20Data%20exploration%20-%20Weatherline/README.md)
+* **Data exploration**, Weatherline Lake district: Analysis of historical weather patterns in the Lake District. [[Documentation]](Projects/SQL%20Data%20exploration%20-%20Weatherline/) [[Code]](Projects/SQL%20Data%20exploration%20-%20Weatherline/README.md)
 
 ### Power BI
-* **Procurement dashboard**, fictitious company, fictitious company, a dashboard to review an organizations spend. [[Documentation]](Power%20BI%20-%20Procurement%20dashboard/README.md) [[.pdf view of dashboard]](https://drive.google.com/file/d/1wqWB2MlV0036dCzYLsSd91TxyCoXMSWj/view?usp=sharing)
+* **Procurement dashboard**, fictitious company, fictitious company, a dashboard to review an organizations spend. [[Documentation]](Projects/Power%20BI%20-%20Procurement%20dashboard/README.md) [[.pdf view of dashboard]](https://drive.google.com/file/d/1wqWB2MlV0036dCzYLsSd91TxyCoXMSWj/view?usp=sharing)
 
 ## Certifications
 * [Google Data Analytics Professional Certificate](https://drive.google.com/file/d/1NXKDZShsj2_qZCxtoar1PiqODv0VTkvc/view?usp=sharing)
