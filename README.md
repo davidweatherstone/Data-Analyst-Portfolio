@@ -1,7 +1,7 @@
 ## Overview
 Welcome to my data analysis portfolio, my name is David Weatherstone. As a data analyst in training, I am **passionate** about using my analytical skills and technical knowledge to make an impact in a new role. My studies in **Excel**, **Power Query**, **SQL**, **Power BI**, **Tableau**, and **Python**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
-Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. I am excited to join a **forward-thinking organisation** and make a meaningful contribution to its success. You can find my CV [here](https://drive.google.com/file/d/1FRTk8Pzkjvy1S52SktgnODWZVsr5KDFK/view?usp=sharing).
+Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. I am excited to join a **forward-thinking organisation** and make a meaningful contribution to its success. You can find my CV [here](https://drive.google.com/file/d/1BQ4EbYOefU4AjZByqOX2VHckjgQAON0S/view).
 
 ## Skills
 📊 **Microsoft Excel**: v/xlookups, pivot tables, conditional formatting, data validation, charts and graphs
@@ -23,7 +23,7 @@ Through my professional experience, I have gained a strong foundation in **data 
 * **Data exploration**, Weatherline Lake district: Analysis of historical weather patterns in the Lake District. [[Documentation]](SQL%20Data%20exploration%20-%20Weatherline/) [[Code]](SQL%20Data%20exploration%20-%20Weatherline/README.md)
 
 ### Power BI
-* **Procurement dashboard**, fictitious company, a dashboard to review an organizations spend over 12 months. [[Documentation]](Power%20BI%20-%20Procurement%20dashboard/README.md) [[.pdf view of dashboard]](https://drive.google.com/file/d/1wqWB2MlV0036dCzYLsSd91TxyCoXMSWj/view?usp=sharing)
+* **Procurement dashboard**, fictitious company, fictitious company, a dashboard to review an organizations spend. [[Documentation]](Power%20BI%20-%20Procurement%20dashboard/README.md) [[.pdf view of dashboard]](https://drive.google.com/file/d/1wqWB2MlV0036dCzYLsSd91TxyCoXMSWj/view?usp=sharing)
 
 ## Certifications
 * [Google Data Analytics Professional Certificate](https://drive.google.com/file/d/1NXKDZShsj2_qZCxtoar1PiqODv0VTkvc/view?usp=sharing)
