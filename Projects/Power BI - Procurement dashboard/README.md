@@ -7,8 +7,8 @@
     * Used RANDNUMBER() function within Excel to create transaction amounts and transaction dates (e.g. RANDNUMBER(DATE(2022,1,1),DATE(2022,12,31)).
 
 ### Import and data modeling
-* Imported the tables into Power BI.
-* Within PowerQuery, checked that the data types have imported correctly (date/numerical/text).
+* Imported the tables into Power BI Desktop.
+* Within Power Query, checked that the data types have imported correctly (date/numerical/text).
 * Power BI recognized many of the relationships between the tables.
 * Reorganized the model to more easily recognize the relationships.
     * Two fact tables are the transaction tables for Contracted spend and OTV spend (One-time vendor, i.e. non-contracted spend).
@@ -21,12 +21,12 @@ The plan was to create two dashboards with this data:
 1. An operational view - for a procurement team to monitor monthly spend by category and other metrics relating supplier management.
     * The central features of this dashboard is a **table** showing vendor details and a **bar graph** showing spend by month.
     * **Slicers** allow the procurement team to filter by year, department, line of business.
-    * Other metrics surround the dashboard, metrics specific to supplier management that also act as clickable buttons such as:
+    * Other metrics surround the dashboard, metrics specific to supplier management that also act as clickable buttons (made possible with **bookmarks**):
         * Live vendor count
         * Awaiting ethical trading statement sign off count
         * Awaiting credit check count
         * Accounts going dormant
-2. An executive view -  for the exec team to view showing an overview of spend they own against their budget.
+2. An executive view -  for the exec team to view showing an overview of spend they own against the budget.
     * Here the focus is on spend against budget, so the main features are:
         *  **Gauge charts** showing spend against budget
         *  A **bar chart** showing spend by month
