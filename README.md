@@ -1,21 +1,16 @@
 ## Overview
-Welcome to my Data Analysis Portfolio, my name is David Weatherstone. As a Data Analyst, I am **passionate** about using my analytical skills and technical knowledge to make an impact in a new role. My studies in **Excel**, **Power Query**, **SQL**, **Power BI**, **Tableau**, and **Python**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
+Welcome to my Data Analysis Portfolio, my name is David Weatherstone. As a Data Analyst, I am **passionate** about using my analytical skills and technical knowledge to make an impact in a new role. My studies in **Excel**, **SQL**, **Power BI**, **Tableau**, and **Python**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
-Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting, and I am eager to continue building upon these skills as I embark on my career as a data analyst. You can find my CV <a href="https://drive.google.com/file/d/1BQ4EbYOefU4AjZByqOX2VHckjgQAON0S/view" target="_blank">here</a>.
+Through my professional experience, I have gained a strong foundation in **data analysis**, **reporting**, and **relationship management**. I have provided valuable insights to management through data analysis and reporting. You can find my CV <a href="https://drive.google.com/file/d/1BQ4EbYOefU4AjZByqOX2VHckjgQAON0S/view" target="_blank">here</a>.
 
 ## Skills
 📊 **Microsoft Excel**: v/xlookups, pivot tables, conditional formatting, data validation, charts and graphs
-
-🔍 **Power Query**: data sourcing and transformation, merging and appending tables, creating custom columns and calculations
 
 💾 **SQL**: querying, joins, aggregations, data normalisation, views, stored procedures, common table expressions
 
 🔮 **Power BI**: DAX, data modelling, creating and formatting visualisations, data exploration and discovery
 
 ## Projects
-
-### Excel
-* **Affordability calculator**, a personal project to calculate a comfortable borrowing amount for a house purchase and typical monthly expenses. [[.xlsm file]](Projects/EXCEL/Affordability%20calculator.xlsm)
 
 ### SQL
 * **Data cleaning**, Vehicle licensing statistics: A project to clean and streamline data from GOV.UK. [[Documentation]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
