@@ -16,7 +16,7 @@ The sample data included information on both current and former employees of the
 
 #### Visualizations
 
-To create a dashboard suitable for professional use, I designed a clean and simple layout with a range of visualizations that can easily be incorporated into presentations. To enhance user experience, I utilized bookmarks and buttons, creating a seamless experience for users. The entire report is contained within a single tab.
+I designed a clean and simple layout for the dashboard that is suitable for professional use, featuring a range of visualizations that can easily be incorporated into presentations. To create a seamless experience for users, I utilized bookmarks and buttons extensively, allowing users to navigate the dashboard with ease. To demonstrate my proficiency in using bookmarks, I designed the entire report within a single tab.
 
 #### How to Use the Dashboard
 
