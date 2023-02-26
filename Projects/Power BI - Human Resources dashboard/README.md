@@ -1,18 +1,26 @@
-# Power BI - Human Resources dashboard
+# Power BI - Human Resources Dashboard
 
-[Dashoard link hosted on NovyPro](https://www.novypro.com/project/pimhrdashboard)
+[View the dashboard hosted on NovyPro](https://www.novypro.com/project/pimhrdashboard) / [Download the .pbix file here](People%20analytics.pbix)
 
 ## Overview
-The aim of this porject was to create a sample dashboard for ficitious company's Human Resources department while displaying my knowledge of Power BI. I wanted to use DAX where necessary to display the HR metrics I had in mind and then focus extensively on using the bookmarks and buttons features within Power BI.
 
-### Sample data
-This dashboard was created as part of a Data In Motion LLC data viz challenge and the sample data was taken from [Steven Shoemaker's newsletter](https://www.stevenshoemaker.me/datahub).
+The goal of this project was to showcase my Power BI skills by creating a sample dashboard for a fictional company's Human Resources department. I utilized DAX to display key HR metrics and focused on using the bookmarks and buttons features to enhance user experience.
 
-The sample data was all within a single table, therefore data modelling was simple. I created multiple calendar tables as required due to multiple date fields within the data (hire date and termination date) and requirements within the data visualizations.
+### Sample Data
 
-#### Visualizations - [People_analytics.pbix](People%20analytics.pbix) / [Dashboard link hosted on NovyPro](https://www.novypro.com/project/pimhrdashboard)
+This dashboard was created as part of a Data In Motion LLC data visualization challenge, using sample data provided by [Steven Shoemaker's newsletter](https://www.stevenshoemaker.me/datahub). The data was stored in a single table, making data modeling a straightforward process. To accommodate multiple date fields and data visualization requirements, I created several calendar tables.
 
-Visually I wanted to use quite a simple layout with a clean group of visualizations for using within a professional environment and so that visualizations can be snipped for use within a slide deck. Given that I was also working to display and practice my use of bookmarks and buttons, I also made the entire report within a single tab. 
+### Metrics Tracked
+
+The sample data included information on both current and former employees of the fictional company. Demographic information such as age, race, gender, education, and location was included, as well as company-specific information such as salary, hire date, termination date, and job level. I created visualizations that display current employee demographics and provide insight into staff turnover within the organization.
+
+#### Visualizations
+
+To create a dashboard suitable for professional use, I designed a clean and simple layout with a range of visualizations that can easily be incorporated into presentations. To enhance user experience, I utilized bookmarks and buttons, creating a seamless experience for users. The entire report is contained within a single tab.
+
+#### How to Use the Dashboard
+
+To use the dashboard, simply click on the link above to access it on NovyPro. The dashboard contains a range of visualizations that can be interacted with to gain insight into key HR metrics. You can filter data by demographic information to gain more specific insights.
 
 ### Sample of DAX used
 
