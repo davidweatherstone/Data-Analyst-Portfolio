@@ -87,4 +87,4 @@ All(termcalendar)
 
 ![Dashboard preview](People%20analytics.gif)
 
-![Dashboard model](data%20model.png)
+![Dashboard model](data%20model.jpg)
