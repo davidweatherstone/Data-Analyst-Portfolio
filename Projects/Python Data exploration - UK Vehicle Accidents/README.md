@@ -73,5 +73,5 @@ The chaining format used in this query is discussed in Matt Harrisons book "Effe
 
 I've created multiple queries using Pandas and then often displayed the results in plots using Seaborn to visualize the results better.
 
-While you can view the full notebook here: [[Notebook]](/UK_Accident.ipynb).
+While you can view the full notebook here: [Notebook](UK_Accident.ipynb).
 
