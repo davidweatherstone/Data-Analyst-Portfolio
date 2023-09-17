@@ -67,11 +67,11 @@ def tweak_accidents(accidents):
 
 Creating this function allowed me to save a significant amount of memory which will speed up querying the data and allow for the correct methods to be used.
 
-The format used is discussed in Matt Harrisons book "Effective Pandas". By chaining methods within my query it means that I'm able to comment out code as I go, so that I can build on the previous query and experiment as I do.
+The chaining format used in this query is discussed in Matt Harrisons book "Effective Pandas". By chaining methods within my query I am able to comment out code as I go, so that I can build on the query incrementally and experiment to get to the result I want.
 
 ## Exploration
 
 I've created multiple queries using Pandas and then often displayed the results in plots using Seaborn to visualize the results better.
 
-While you can view the full notebook here: [[Notebook]](/UK_Accident.ipynb)
+While you can view the full notebook here: [[Notebook]](/UK_Accident.ipynb).
 
