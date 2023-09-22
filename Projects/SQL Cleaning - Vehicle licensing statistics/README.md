@@ -1,6 +1,6 @@
 # SQL data cleaning - Vehicle licensing statistics UK
 
-## Data background
+## Data Overview
 This data is taken from GOV.UK Department for Transport and Driver and Vehicle Licensing Agency webpage and it is titled as:
 
 * VEH1153: Vehicles registered for the first time by body type and fuel type: Great Britain and United Kingdom (ODS, 3.48 MB)
@@ -28,7 +28,7 @@ FROM newly_registered_vehicles;
 ```
 
 There are a few things that stand out from the data returned:
-* The Geography column states the country. The United Kingdom is split up in to their individual nations as well as the United Kingdom and separately Great Britain. **I am only interested in the United Kingdom**.
+* The Geography column states the country. The United Kingdom is split up in to their individual nations as well as the United Kingdom and separately Great Britain. **I am only interested in the United Kingdom as a whole**.
 * The Date interval column has annual data, quarterly data and monthly data. **I am only interested in the monthly data** (currently formatted as MMMM-YYYY).
 	* I would also like to split out the Date column to show **Year**, **Month_name** and **Month_number**.
 * The Units column breaks down the volumes of newly registered vehicles by Units - Thousands and Units - Percentage of total. **I am only interested in the Units - Thousands**.
