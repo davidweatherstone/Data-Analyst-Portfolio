@@ -12,7 +12,7 @@ My primary goal with this project is to further develop and refine my Python pro
 To analyse this data I've performed data transformation and cleaning to allow me to query it further.
 
 <details>
-<summary>Tweak Function created to clean and transform the Accident data</summary>
+<summary>EXPAND: Tweak Function created to clean and transform the Accident data</summary>
 
 ```python
 # Creating a function to transform and clean the data as required for analysis.
@@ -78,7 +78,7 @@ I've created queries using Pandas and then displayed the results in plots using 
 While you can view the full notebook here: [Notebook](UK_Accident.ipynb), below are some examples of the transformations carried out on the data to plot the data.
 
 <details>
-   <summary>Accidents by day light</summary>
+   <summary>EXPAND: Accidents by day light</summary>
 
 ```python
 ## Plotting reported accidents count and percentage split by Day Light
@@ -152,7 +152,7 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 ![By_Daylight](Images/accidents_by_daylight.png)
 
 <details>
-   <summary>Accidents by hour, weekday against weekend</summary>
+   <summary>EXPAND: Accidents by hour, weekday against weekend</summary>
 
 ```python
 # Is there a difference between peak hours during the week and peak hours on a weekend?
@@ -200,7 +200,7 @@ plt.tight_layout()
 ![By_Hour](Images/accidents_by_hour.png)
 
 <details>
-<summary>Accident Percentage vs Road Conditions by Month</summary>
+<summary>EXPAND: Accident Percentage vs Road Conditions by Month</summary>
 
 ```python
 # Define custom colors for specific road conditions
