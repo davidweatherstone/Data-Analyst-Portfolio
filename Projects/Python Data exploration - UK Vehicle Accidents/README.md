@@ -69,7 +69,7 @@ def tweak_accidents(accidents):
 
 Creating this function will allow me to optimize memory usage. This results in quicker results when querying and allows for datatype-specific methods to be used. 
 
-The query structure, based on method changing is inspired by Matt Harrison's book "Effective Pandas". This approach allows me to comment out code as I do, so that I can build the function incrementally and experiment to get the result I want.
+The query structure, based on method chaining is inspired by Matt Harrison's book "Effective Pandas". This approach allows me to comment out code as I go, so that I can build the function incrementally and experiment to get the result I want.
 
 ## Exploration
 
