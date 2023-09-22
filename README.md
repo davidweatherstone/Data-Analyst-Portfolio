@@ -1,5 +1,5 @@
 ## Overview
-Welcome to my Data Analysis Portfolio, my name is David Weatherstone. As a Data Analyst, I am **passionate** about using my analytical skills and technical knowledge to accelerate and improve decision-making. My studies in **Excel**, **SQL**, **Python** and **Power BI**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
+Welcome to my Data Analysis Portfolio. As a Data Analyst, I am **passionate** about using my analytical skills and technical knowledge to accelerate and improve decision-making. My studies in **Excel**, **SQL**, **Python** and **Power BI**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
 You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuzHt6ZGRUwNDLk_/view?usp=sharing" target="_blank">here</a>.
 
