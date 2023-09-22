@@ -3,11 +3,13 @@
 
 ## Overview
 
-This dataset was found on Kaggle, I thought it would be a useful dataset to practice data analysis with Python with a large real world data set. Vehicle Accidents are displayed as individual records (rows) with many data items collected per accident. Various columns allow for time series, regression and geospatial analysis. I am using this data to practice and expand my skills with Python.
+I found this dataset on Kaggle and thought it would provide a valuable opportunity to practice my data analysis skills. It's a large real world dataset where vehicle accidents display as individual rows. The datasets collection of columns allow for many areas of analysis (time series, regression, geospatial, etc.).
+
+My primary goal with this project is to further develop and refine my Python programming skills.
 
 ## Initial cleaning
 
-To use the data further I've transformed the data to allow me to query it further and export as required.
+To analyse this data I've performed data transformation and cleaning to allow me to query it further.
 
 <details>
 <summary>Tweak Function created to clean and transform the Accident data</summary>
@@ -65,15 +67,15 @@ def tweak_accidents(accidents):
 
 </details>
 
-Creating this function allowed me to save a significant amount of memory which will speed up querying the data and allow for datatype-specific methods to be used.
+Creating this function will allow me to optimize memory usage. This results in quicker results when querying and allows for datatype-specific methods to be used. 
 
-The chaining format used in this query is discussed in Matt Harrisons book "Effective Pandas". By chaining methods within my query I am able to comment out code as I go, so that I can build on the function incrementally and experiment to get to the result I want.
+The query structure, based on method changing is inspired by Matt Harrison's book "Effective Pandas". This approach allows me to comment out code as I do, so that I can build the function incrementally and experiment to get the result I want.
 
 ## Exploration
 
-I've created multiple queries using Pandas and then often displayed the results in plots using Seaborn to visualize the results better.
+I've created queries using Pandas and then displayed the results in plots using Seaborn and MatPlotLib.
 
-While you can view the full notebook here: [Notebook](UK_Accident.ipynb). Below are some examples of the transformations carried out on the data to plot the data.
+While you can view the full notebook here: [Notebook](UK_Accident.ipynb), below are some examples of the transformations carried out on the data to plot the data.
 
 <details>
    <summary>Accidents by day light</summary>
@@ -147,6 +149,7 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 
 </details>
 
+![By_Daylight](Images/accidents_by_daylight.png)
 
 <details>
    <summary>Accidents by hour, weekday against weekend</summary>
@@ -194,6 +197,7 @@ plt.tight_layout()
 
 </details>
 
+![By_Hour](Images/accidents_by_hour.png)
 
 <details>
 <summary>Accident Percentage vs Road Conditions by Month</summary>
@@ -244,6 +248,8 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 
 </details>
 
+![By_Road_Conditions](Images/accidents_by_road_conditions_and_month.png)
+
 <details>
 <summary>Accident Count by Year and Month</summary>
 
@@ -280,3 +286,5 @@ plt.xlabel("Month")
 ```
 
 </details>
+
+![By_Year](Images/accidents_by_year_and_month.png)
