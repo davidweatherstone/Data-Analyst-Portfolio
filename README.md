@@ -15,7 +15,7 @@ You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuz
 ## Projects
 
 ### SQL
-* **Data cleaning**, Vehicle licensing statistics: A project to clean and streamline data from GOV.UK. [[Documentation]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
+* **Data cleaning**, Vehicle licensing statistics: A project to clean and analyse data from GOV.UK. [[Documentation]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
 
 * **Data exploration**, Weatherline Lake district: Analysis of historical weather patterns in the Lake District. [[Documentation]](Projects/SQL%20Data%20exploration%20-%20Weatherline/) [[Code]](Projects/SQL%20Data%20exploration%20-%20Weatherline/README.md)
 
