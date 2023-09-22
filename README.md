@@ -4,11 +4,11 @@ Welcome to my Data Analysis Portfolio, my name is David Weatherstone. As a Data 
 You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuzHt6ZGRUwNDLk_/view?usp=sharing" target="_blank">here</a>.
 
 ## Skills
-📊 **Microsoft Excel**: v/xlookups, pivot tables, conditional formatting, data validation, charts and graphs
+📊 **Microsoft Excel**: v/xlookups, pivot tables, conditional formatting, data validation, charts and graphs.
 
-💾 **SQL**: querying, joins, aggregations, data normalisation, views, stored procedures, common table expressions
+💾 **SQL**: querying, joins, aggregations, data normalisation, views, stored procedures, common table expressions.
 
-🔮 **Power BI**: DAX, data modelling, creating and formatting visualisations, data exploration and discovery
+🔮 **Power BI**: DAX, data modelling, creating and formatting visualisations, data exploration and discovery.
 
 🐍 **Python**: Pandas, MatPlotLib, Seaborn, cleaning and transforming data for exploration.
 
