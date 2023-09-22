@@ -149,7 +149,54 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 
 
 <details>
-<summary>Graph to display the Accident Percentage vs Road Conditions by Month</summary>
+   <summary>Accidents by hour, weekday against weekend</summary>
+
+```python
+# Is there a difference between peak hours during the week and peak hours on a weekend?
+
+ct_of_weekday = (accidents
+                .assign(Weekday=lambda df_: df_["Day_of_Week"]
+                            .map({1: "Weekend", 2: "Weekday", 3: "Weekday", 4: "Weekday",
+                                5: "Weekday", 6: "Weekday", 7: "Weekend"})
+                            .astype("category"))
+                .groupby("Weekday").size()
+                .reset_index(name="Count")
+                )
+
+pct_of_weekday = (accidents
+                .assign(Hour=lambda df_: df_["Date"].dt.hour,
+                        Weekday=lambda df_: df_["Day_of_Week"]
+                            .map({1: "Weekend", 2: "Weekday", 3: "Weekday", 4: "Weekday",
+                                5: "Weekday", 6: "Weekday", 7: "Weekend"})
+                            .astype("category"))
+                .groupby(["Hour", "Weekday"]).size()
+                .div(ct_of_weekday.set_index("Weekday")["Count"])
+                .mul(100)
+                .round(2)
+                .reset_index(name="Percentage")
+                )
+
+plt.figure(figsize=(6,4))
+x = np.sort(accidents["Date"].dt.hour.unique())
+custom_labels = ["12AM", "1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM", "7 AM",
+                 "8 AM", "9 AM", "10 AM", "11 AM", "12 PM", "1 PM","2 PM", "3 PM",
+                 "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11PM"]
+
+sns.lineplot(data=pct_of_weekday, x="Hour", y="Percentage", hue="Weekday", palette=["#7bc164", "#33638d"])
+
+subtitle_text = "Accident trends on weekends do not follow the same rushhour trend that occur during the week"
+
+plt.suptitle("Hourly Accident Distribution on Weekdays vs. Weekends", fontsize=16)
+plt.figtext(0.5, 0.88, subtitle_text, ha="center", fontsize=10, color="grey")
+plt.xticks(x, custom_labels, rotation=45)
+plt.tight_layout()
+```
+
+</details>
+
+
+<details>
+<summary>Accident Percentage vs Road Conditions by Month</summary>
 
 ```python
 # Define custom colors for specific road conditions
@@ -198,7 +245,7 @@ plt.tight_layout(rect=[0, 0.05, 1, 0.95])
 </details>
 
 <details>
-<summary>Graph to display the Accident Count by Year and Month</summary>
+<summary>Accident Count by Year and Month</summary>
 
 ```python
 accidents_by_year_and_month = (accidents[["Date", "Longitude"]]
