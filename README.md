@@ -36,5 +36,5 @@ You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuz
     * BSc Hons, **International Business (Economics)**
 
 ## Connect with me
-- LinkedIn: [David Weatherstone](https://www.linkedin.com/in/davidjweatherstone)
+- LinkedIn: [David Weatherstone](https://www.linkedin.com/in/davidweatherstone)
 - Email: djweatherstone@googlemail.com
