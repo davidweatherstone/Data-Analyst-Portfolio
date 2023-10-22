@@ -37,31 +37,32 @@ def tweak_accidents(accidents):
                 "Pedestrian_Crossing-Physical_Facilities"]
    
    return (accidents
+      .drop(columns=drop_columns)
       .rename(columns={"Speed_limit":"Speed_Limit"})
+      .astype({"Longitude": "float32",
+               "Latitude": "float32",
+               "Number_of_Vehicles": "uint8",
+               "Number_of_Casualties": "uint8",
+               "Day_of_Week": "uint8",
+               "Road_Type": "category",
+               "Speed_Limit": "uint8",
+               "Light_Conditions": "category",
+               "Weather_Conditions": "category",
+               "Road_Surface_Conditions": "category",
+               "Special_Conditions_at_Site": "category",
+               "Carriageway_Hazards": "category"         
+               })
       .assign(
-         Longitude=lambda df_: df_["Longitude"].astype("float32"),
-         Latitude=lambda df_: df_["Latitude"].astype("float32"),
          Accident_Severity=lambda df_: df_["Accident_Severity"]
-            .map({1: "Most Severe", 2: "Moderate Severity", 3: "Least Severe"})
-            .astype("category"),
-         Number_of_Vehicles=lambda df_: df_["Number_of_Vehicles"].astype("uint8"),
-         Number_of_Casualties=lambda df_: df_["Number_of_Casualties"].astype("uint8"),
+         .map({1: "Most Severe", 2: "Moderate Severity", 3: "Least Severe"})
+         .astype("category"),
          Date=lambda df_: pd.to_datetime(df_["Date"]+" "+df_["Time"], format="%d/%m/%Y %H:%M"),
          Time=lambda df_: pd.to_datetime(df_["Time"], format="%H:%M").dt.time,
-         Day_of_Week=lambda df_: df_["Day_of_Week"].astype("uint8"),
-         Road_Type=lambda df_: df_["Road_Type"].astype("category"),
-         Speed_Limit=lambda df_: df_["Speed_Limit"].astype("uint8"),
-         Light_Conditions=lambda df_: df_["Light_Conditions"].astype("category"),
-         Weather_Conditions=lambda df_: df_["Weather_Conditions"].astype("category"),
-         Road_Surface_Conditions=lambda df_: df_["Road_Surface_Conditions"].astype("category"),
-         Special_Conditions_at_Site=lambda df_: df_["Special_Conditions_at_Site"].astype("category"),
-         Carriageway_Hazards=lambda df_: df_["Carriageway_Hazards"].astype("category"),
          Urban_or_Rural_Area=lambda df_: df_["Urban_or_Rural_Area"]
-            .map({1: "Urban", 2: "Suburban", 3: "Rural"})
-            .astype("category")
+         .map({1: "Urban", 2: "Suburban", 3: "Rural"})
+         .astype("category")
          )
-      .drop(columns=drop_columns)
-      .dropna()
+      .dropna()   
       )
 ```
 
