@@ -14,6 +14,9 @@ You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuz
 
 ## Projects
 
+### WebDev
+* **Move My Pallets** is a logistics website designed to streamline the process of pallet movement. Powered by Python (Flask, Jinja2), SQL, and HTML/CSS (Bootstrap), the platform connects customers needing pallets moved with suppliers bidding for their transportation. [[Code]](https://github.com/davidweatherstone/move_my_pallets/) [[Website]](https://move-my-pallets.onrender.com/)
+
 ### SQL
 * **Data cleaning**, Vehicle licensing statistics: A project to clean and analyse data from GOV.UK. [[Documentation]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
 
