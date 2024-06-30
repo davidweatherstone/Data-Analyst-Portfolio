@@ -14,7 +14,9 @@ You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuz
 
 ## Projects
 
-### WebDev
+### Python
+* **UK Vehicle Accident data exploration**, I utilized the Pandas library to clean the dataset and optimize data types. Following this I continued using Pandas to explore the data and combined that with the Seaborn library to visualize queries created to understand the data further. [[Documentation]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/) [[Notebook]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/UK_Accident.ipynb)
+  
 * **Move My Pallets** is a logistics website designed to streamline the process of pallet movement. Powered by Python (Flask, Jinja2), SQL, and HTML/CSS (Bootstrap), the platform connects customers needing pallets moved with suppliers bidding for their transportation. [[Code]](https://github.com/davidweatherstone/move_my_pallets/) [[Website]](https://move-my-pallets.onrender.com/)
 
 ### SQL
@@ -26,9 +28,6 @@ You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuz
 * **Human Resources dashboard**, this is a Power BI dashboard example I created for a fictional company's Human Resources department. The dashboard tracks important metrics such as employee demographics and staff turnover. [[Documentation]](Projects/Power%20BI%20-%20Human%20Resources%20dashboard/README.md) [[NovyPro dashboard link]](https://www.novypro.com/project/pimhrdashboard)
 
 * **Procurement dashboard**, I created a dashboard for a fictitious company that offers a detailed analysis of spend and supplier data. The dashboard allows for filtering by department, line of business, and budget, providing valuable insights into the company's financial performance and supplier relationships. [[Documentation]](Projects/Power%20BI%20-%20Procurement%20dashboard/README.md) [[.pdf view of dashboard]](https://drive.google.com/file/d/1rbF_0xmT34H7F5cI4WVjZtjp-Us_iRmF/view?usp=sharing)
-
-### Python (data analysis)
-* **UK Vehicle Accident data exploration**, I utilized the Pandas library to clean the dataset and optimize data types. Following this I continued using Pandas to explore the data and combined that with the Seaborn library to visualize queries created to understand the data further. [[Documentation]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/) [[Notebook]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/UK_Accident.ipynb)
 
 ## Certifications
 * [Google Data Analytics Professional Certificate](https://drive.google.com/file/d/1NXKDZShsj2_qZCxtoar1PiqODv0VTkvc/view?usp=sharing)
