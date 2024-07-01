@@ -17,8 +17,8 @@ You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuz
 ### Python
 * **UK Vehicle Accident data exploration**, I utilized the Pandas library to clean the dataset and optimize data types. Following this I continued using Pandas to explore the data and combined that with the Seaborn library to visualize queries created to understand the data further. [[Documentation]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/) [[Notebook]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/UK_Accident.ipynb)
   
-* **Move My Pallets** is a logistics website designed to streamline the process of pallet movement. Powered by Python (Flask, Jinja2), SQL, and HTML/CSS (Bootstrap), the platform connects customers needing pallets moved with suppliers bidding for their transportation. [[Code]](https://github.com/davidweatherstone/move_my_pallets/) [[Website]](https://move-my-pallets.onrender.com/)
-
+* **Move My Pallets** is a logistics website designed to streamline the process of pallet movement. Powered by Python (Flask, Jinja2), SQL, and HTML/CSS (Bootstrap), the platform connects customers needing pallets moved with suppliers bidding for their transportation. [[Code]](https://github.com/davidweatherstone/move_my_pallets/)
+  
 ### SQL
 * **Data cleaning**, Vehicle licensing statistics: A project to clean and analyse data from GOV.UK. [[Documentation]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/) [[Code]](Projects/SQL%20Cleaning%20-%20Vehicle%20licensing%20statistics/README.md)
 
