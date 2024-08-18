@@ -1,7 +1,8 @@
 ## Overview
 Welcome to my Data Portfolio. As a Data Analyst, I am **passionate** about using my analytical skills and technical knowledge to accelerate and improve decision-making. My studies in **Excel**, **SQL**, **Python** and **Power BI**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
-You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuzHt6ZGRUwNDLk_/view?usp=sharing" target="_blank">here</a>. I also maintain a [personal blog](https://davidweatherstone.onrender.com/) where posts relate to the topics I am studying.
+You can find my CV <a href="https://drive.google.com/file/d/142d5TQWKCrVZc82qEh1DiEH4BZE-JGn3/view?usp=drive_link" target="_blank">here</a>. I also maintain a [personal blog](https://davidweatherstone.onrender.com/) where posts relate to the topics I am studying.
+
 
 ## Skills
 📊 **Microsoft Excel**: v/xlookups, pivot tables, conditional formatting, data validation, charts and graphs.
@@ -10,11 +11,13 @@ You can find my CV <a href="https://drive.google.com/file/d/1DG50l-D0uY5aG_HbUuz
 
 🔮 **Power BI**: DAX, data modelling, creating and formatting visualisations, data exploration and discovery.
 
-🐍 **Python**: Pandas, MatPlotLib, Seaborn, cleaning and transforming data for exploration.
+🐍 **Python**: Passionate about Python's versatility, with a particular focus on DataFrame libraries (like Pandas), plotting libraries (such as Matplotlib and Seaborn), and web frameworks (including Flask and FastHTML).
 
 ## Projects
 
 ### Python
+* **Market Intelligence reporting**, leverages HTML and CSS to design a A4 template for PDF reports. Utilizing Flask for server-side processing and Jinja2 for templating, I dynamically integrate a dictionary of Matplotlib figures and strings into the HTML file. This setup enables the seamless generation of paginated reports. [[Repository]](https://github.com/davidweatherstone/report_builder/) [[Sample PDF Report]](https://github.com/davidweatherstone/report_builder/raw/main/Market%20Intelligence%2C%20Cost%20Drivers%20Report%2C%20Aug-24.pdf)
+  
 * **UK Vehicle Accident data exploration**, I utilized the Pandas library to clean the dataset and optimize data types. Following this I continued using Pandas to explore the data and combined that with the Seaborn library to visualize queries created to understand the data further. [[Documentation]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/) [[Notebook]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/UK_Accident.ipynb)
   
 * **Move My Pallets** is a logistics website designed to streamline the process of pallet movement. Powered by Python (Flask, Jinja2), SQL, and HTML/CSS (Bootstrap), the platform connects customers needing pallets moved with suppliers bidding for their transportation. [[Code]](https://github.com/davidweatherstone/move_my_pallets/)
