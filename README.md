@@ -16,7 +16,7 @@ You can find my CV <a href="https://drive.google.com/file/d/142d5TQWKCrVZc82qEh1
 ## Projects
 
 ### Python
-* **Market Intelligence reporting**, leverages HTML and CSS to design a A4 template for PDF reports. Utilizing Flask for server-side processing and Jinja2 for templating, I dynamically integrate a dictionary of Matplotlib figures and strings into the HTML file. This setup enables the seamless generation of paginated reports. [[Repository]](https://github.com/davidweatherstone/report_builder/) [[Sample PDF Report]](https://github.com/davidweatherstone/report_builder/raw/main/Market%20Intelligence%2C%20Cost%20Drivers%20Report%2C%20Aug-24.pdf)
+* **Market Intelligence reporting**, uses HTML and CSS to design an A4 template for PDF reports. Utilizing Flask for server-side processing and Jinja2 for templating, I integrate a dictionary of Matplotlib figures and strings into the HTML file. This setup enables the generation of paginated reports. [[Repository]](https://github.com/davidweatherstone/report_builder/) [[Sample PDF Report]](https://github.com/davidweatherstone/report_builder/raw/main/Market%20Intelligence%2C%20Cost%20Drivers%20Report%2C%20Aug-24.pdf)
   
 * **UK Vehicle Accident data exploration**, I utilized the Pandas library to clean the dataset and optimize data types. Following this I continued using Pandas to explore the data and combined that with the Seaborn library to visualize queries created to understand the data further. [[Documentation]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/) [[Notebook]](Projects/Python%20Data%20exploration%20-%20UK%20Vehicle%20Accidents/UK_Accident.ipynb)
   
