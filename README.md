@@ -1,8 +1,7 @@
 ## Overview
 Welcome to my Data Portfolio. As a Data Analyst, I am **passionate** about using my analytical skills and technical knowledge to accelerate and improve decision-making. My studies in **Excel**, **SQL**, **Python** and **Power BI**, along with my **Google Data Analytics Professional Certificate**, have prepared me to excel in data analysis and reporting.
 
-You can find my CV <a href="https://drive.google.com/file/d/142d5TQWKCrVZc82qEh1DiEH4BZE-JGn3/view?usp=drive_link" target="_blank">here</a>. I also maintain a [personal blog](https://davidweatherstone.onrender.com/) where posts relate to the topics I am studying.
-
+You can find my CV <a href="https://drive.google.com/file/d/142d5TQWKCrVZc82qEh1DiEH4BZE-JGn3/view?usp=drive_link" target="_blank">here</a>.
 
 ## Skills
 📊 **Microsoft Excel**: v/xlookups, pivot tables, conditional formatting, data validation, charts and graphs.
@@ -11,7 +10,7 @@ You can find my CV <a href="https://drive.google.com/file/d/142d5TQWKCrVZc82qEh1
 
 🔮 **Power BI**: DAX, data modelling, creating and formatting visualisations, data exploration and discovery.
 
-🐍 **Python**: Passionate about Python's versatility, with a particular focus on DataFrame libraries (like Pandas), plotting libraries (such as Matplotlib and Seaborn), and web frameworks (including Flask and FastHTML).
+🐍 **Python**: Passionate about Python's versatility, with a particular focus on DataFrame libraries (like Pandas), plotting libraries (such as Matplotlib and Seaborn), and Flask/Jinja2.
 
 ## Projects
 
